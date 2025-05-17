@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1747433745 source:d:\ayed\practicalistas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1747433765 source:d:\ayed\practicalistas\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1747426836 d:\ayed\practicalistas\lista.h
+	"nodo.h"
+
+1747339468 d:\ayed\practicalistas\nodo.h
+
+1747173421 source:d:\ayed\practicalistas\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
