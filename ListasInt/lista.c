@@ -123,18 +123,24 @@ void eliminarUltimo(ListaPtr lista){
     }
     setSiguiente(actual, NULL);
 };
-
 int buscarElemento(ListaPtr lista, int dato){
     NodoPtr actual = getPrimero(lista);
     int tam = obtenerTam(lista);
+    int encontrado = -1;
 
     for(int i = 0; i < tam; i++){
         if(getDato(actual) == dato){
-            printf("\nDato encontrado, indice: %d", i);
-        }else{
-            printf("\nDato no encontrado\n");
+            encontrado = i;
+            i = tam;
         }
+        actual = getSiguiente(actual);
     }
+    return encontrado;
 };
-void ordenarBurb(ListaPtr lista);
+void ordenarBurbuja(ListaPtr lista){
+
+
+
+
+};
 

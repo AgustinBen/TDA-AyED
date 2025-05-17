@@ -14,7 +14,7 @@ int main()
     //eliminarPrimero(listaInt);
     //eliminarUltimo(listaInt);
     mostrarLista(listaInt);
-    buscarElemento(listaInt, 20);
+    printf("Buscar el 20: %d", buscarElemento(listaInt, 20));
 
     //getUltimo(listaInt);
     //obtenerTam(listaInt);

@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1692133862 source:c:\users\nperez\desktop\listas_int\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1584205420 source:c:\users\nperez\desktop\listas_int\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1692132787 source:c:\users\nperez\desktop\listas_int\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
+1692132787 c:\users\nperez\desktop\listas_int\nodo.h
+
+1692133422 c:\users\nperez\desktop\listas_int\lista.h
+	"nodo.h"
+
+1746292376 source:d:\ayed\clase 4\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1746285957 d:\ayed\clase 4\lista.h
+	"nodo.h"
+
+1692132787 d:\ayed\clase 4\nodo.h
+
+1746292304 source:d:\ayed\clase 4\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1692132787 source:d:\ayed\clase 4\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
+1746490077 source:d:\ayed\clase 5\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1746490058 d:\ayed\clase 5\lista.h
+	"nodo.h"
+
+1747137654 d:\ayed\clase 5\nodo.h
+
+1746490378 source:d:\ayed\clase 5\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1746490319 source:d:\ayed\clase 5\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
+1747503235 source:d:\ayed\tda-ayed\listasgenericas\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1747495822 d:\ayed\tda-ayed\listasgenericas\lista.h
+	"nodo.h"
+
+1747497622 d:\ayed\tda-ayed\listasgenericas\nodo.h
+
+1747505096 source:d:\ayed\tda-ayed\listasgenericas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1747500082 source:d:\ayed\tda-ayed\listasgenericas\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+

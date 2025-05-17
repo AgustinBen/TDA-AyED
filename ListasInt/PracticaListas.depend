@@ -19,3 +19,23 @@
 	<stdlib.h>
 	"nodo.h"
 
+1747457171 source:d:\ayed\tda-ayed\listasint\main.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1747426836 d:\ayed\tda-ayed\listasint\lista.h
+	"nodo.h"
+
+1747339468 d:\ayed\tda-ayed\listasint\nodo.h
+
+1747173421 source:d:\ayed\tda-ayed\listasint\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
+1747456323 source:d:\ayed\tda-ayed\listasint\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
