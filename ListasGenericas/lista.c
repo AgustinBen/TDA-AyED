@@ -160,42 +160,44 @@ void insertarEnOrden(ListaPtr lista, DatoPtr dato);//tarea, si la lista está ord
 //se inserta se inserta en la posición que corresponda
 
 
-void mostrarLista(ListaPtr lista){
+//void mostrarLista(ListaPtr lista){
+//
+//    printf("\n<LISTA INT>\n");
+//    NodoPtr actual = lista->primero;
+//
+//    while (actual!=NULL){
+//
+//        mostrarNodo(actual);
+//        actual = getSiguiente(actual);
+//    }
+//    printf("\n\n");
+//};
 
-    printf("\n<LISTA INT>\n");
+void mostrarListaGen(ListaPtr lista, void (*mostrar)(void*)){
+
+    printf("\n<LISTA> TAM: %d \n\n", obtenerTamanio(lista));
     NodoPtr actual = lista->primero;
 
     while (actual!=NULL){
 
-        mostrarNodo(actual);
+        mostrar(getDato(actual));
         actual = getSiguiente(actual);
     }
     printf("\n\n");
 };
-void mostrarListaFloat(ListaPtr lista){
 
-    printf("\n<LISTA FLOAT>\n");
-    NodoPtr actual = lista->primero;
-
-    while (actual!=NULL){
-
-        mostrarNodoFloat(actual);
-        actual = getSiguiente(actual);
-    }
-    printf("\n\n");
-};
-void mostrarListaChar(ListaPtr lista){
-
-    printf("\n<LISTA CHAR>\n");
-    NodoPtr actual = lista->primero;
-
-    while (actual!=NULL){
-
-        mostrarNodoChar(actual);
-        actual = getSiguiente(actual);
-    }
-    printf("\n\n");
-};
+//void mostrarListaChar(ListaPtr lista){
+//
+//    printf("\n<LISTA CHAR>\n");
+//    NodoPtr actual = lista->primero;
+//
+//    while (actual!=NULL){
+//
+//        mostrarNodoChar(actual);
+//        actual = getSiguiente(actual);
+//    }
+//    printf("\n\n");
+//};
 
 void liberarLista(ListaPtr lista) {
 

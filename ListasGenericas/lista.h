@@ -10,7 +10,7 @@ typedef struct Lista * ListaPtr;
 ListaPtr crearLista();
 
 void insertarPrimero(ListaPtr lista, DatoPtr dato);
-void insertarUltimo(ListaPtr lista, DatoPtr dato); //tarea
+void insertarUltimo(ListaPtr lista, DatoPtr dato);
 void insertarPosicion(ListaPtr lista, DatoPtr dato, int posicion); //tarea
 
 
@@ -22,7 +22,7 @@ DatoPtr eliminarPrimero(ListaPtr lista);
 DatoPtr eliminarUltimo(ListaPtr lista); //tarea
 DatoPtr eliminarposicion(ListaPtr lista, int pos); //tarea
 
-int obtenerTamanio(ListaPtr lista); //tarea
+int obtenerTamanio(ListaPtr lista);
 
 void ordenarLista(ListaPtr lista);//tarea
 ListaPtr ordenarListaCopia(ListaPtr lista);//tarea
@@ -33,10 +33,9 @@ int buscarElemento(ListaPtr lista, DatoPtr datoBuscado);//tarea
 void insertarEnOrden(ListaPtr lista, DatoPtr dato);//tarea, si la lista está ordenada cada vez que
 //se inserta se inserta en la posición que corresponda
 
-
-void mostrarLista(ListaPtr lista);
-void mostrarListaFloat(ListaPtr lista);
-void mostrarListaChar(ListaPtr lista);
+//void mostrarLista(ListaPtr lista);
+void mostrarListaGen(ListaPtr lista, void(*mostrar)(void*));
+//void mostrarListaChar(ListaPtr lista);
 
 void liberarLista(ListaPtr lista);
 
