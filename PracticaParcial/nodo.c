@@ -46,7 +46,23 @@ void liberarNodo(NodoPtr nodo){
 
 //setters y getters
 
-void setDato (NodoPtr nodo, DatoPtr nuevoDato);
-DatoPtr getDato (NodoPtr nodo);
-void setSiguiente (NodoPtr nodo, NodoPtr nuevoSiguiente);
-NodoPtr getSiguiente (NodoPtr nodo);
+void setDato (NodoPtr nodo, DatoPtr nuevoDato){
+
+    nodo->dato = nuevoDato;
+
+};
+DatoPtr getDato (NodoPtr nodo){
+
+    return nodo->dato;
+
+};
+void setSiguiente (NodoPtr nodo, NodoPtr nuevoSiguiente){
+
+    nodo->siguiente = nuevoSiguiente;
+
+};
+NodoPtr getSiguiente (NodoPtr nodo){
+
+    return nodo->siguiente;
+
+};

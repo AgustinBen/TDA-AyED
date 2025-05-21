@@ -6,7 +6,7 @@ struct Nodo;
 typedef struct Nodo * NodoPtr;
 typedef void * DatoPtr;
 
-// constructores
+// constructor
 
 NodoPtr crearNodo(DatoPtr dato, NodoPtr siguiente);
 void liberarNodo();
