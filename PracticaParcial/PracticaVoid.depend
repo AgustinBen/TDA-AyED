@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1747250370 source:d:\ayed\practicavoid\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1747248514 source:d:\ayed\practicavoid\listac.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
+1747249069 d:\ayed\practicavoid\nodo.h
+
+1747249069 source:d:\ayed\practicavoid\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
