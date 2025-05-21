@@ -11,14 +11,16 @@ int main()
     insertarPrimero(listaInt, 21);
     insertarPrimero(listaInt, 22);
     insertarUltimo(listaInt, 23);
+    insertarUltimo(listaInt, 11);
     //eliminarPrimero(listaInt);
     //eliminarUltimo(listaInt);
     mostrarLista(listaInt);
-    printf("Buscar el 20: %d", buscarElemento(listaInt, 20));
+    ordenarBurbuja(listaInt);
+    mostrarLista(listaInt);
 
-    //getUltimo(listaInt);
-    //obtenerTam(listaInt);
 
+    printf("Buscar el 20: %d \n", buscarElemento(listaInt, 20));
+    printf("ultimo: %d \n", getUltimo(listaInt));
 
 //    liberarLista(listaInt);
 //    insertarPrimero(listaInt, 2);

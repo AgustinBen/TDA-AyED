@@ -15,7 +15,7 @@ void insertarUltimo(ListaPtr lista, int dato);
 
 //getters y setters
 NodoPtr getPrimero(ListaPtr lista);
-NodoPtr getUltimo(ListaPtr lista);
+int getUltimo(ListaPtr lista);
 void setPrimero(ListaPtr lista, NodoPtr nodo);
 void setUltimo(ListaPtr lista, NodoPtr nodo);
 
@@ -24,6 +24,6 @@ int obtenerTam(ListaPtr lista);
 void eliminarPrimero(ListaPtr lista);
 void eliminarUltimo(ListaPtr lista);
 int buscarElemento(ListaPtr lista, int dato);
-void ordenarBurb(ListaPtr lista);
+void ordenarBurbuja(ListaPtr lista);
 
 #endif // LISTA_H_INCLUDED

@@ -38,7 +38,7 @@ void liberarLista(ListaPtr lista){
         free(actual);
         setSiguiente(actual, getSiguiente(actual));
     }
-    //free(lista);
+    free(lista);
 };
 void insertarPrimero(ListaPtr lista, int dato){
 
@@ -68,15 +68,20 @@ NodoPtr getPrimero(ListaPtr lista){
     return lista->primero;
 
 };
-NodoPtr getUltimo(ListaPtr lista){
+int getUltimo(ListaPtr lista){
 
-    NodoPtr actual = lista->primero;
-    while(getSiguiente(actual) != NULL ){
-        actual = getSiguiente(actual);
+    if(lista->primero != NULL){
+
+        NodoPtr actual = lista->primero;
+        while(getSiguiente(actual) != NULL){
+
+            actual = getSiguiente(actual);
+        }
+
+        return getDato(actual);
     }
-    //printf("\nEl ultimo es: %d", getDato(actual));
-    return actual;
 
+    return -1;
 };
 void setPrimero(ListaPtr lista, NodoPtr nodo){
 
@@ -84,14 +89,18 @@ void setPrimero(ListaPtr lista, NodoPtr nodo){
 
 };
 
-//void setUltimo(ListaPtr lista, NodoPtr nodo){
-//
-//    NodoPtr actual = getPrimero(lista);
-//    while(getSiguiente(actual) != NULL){
-//        actual = getSiguiente(actual);
-//    }
-//
-//};
+void setUltimo(ListaPtr lista, NodoPtr nodo){
+
+    if(getPrimero(lista) != NULL){
+        NodoPtr actual = getPrimero(lista);
+        while(getSiguiente(actual) != NULL){
+            actual = getSiguiente(actual);
+        }
+        setSiguiente(actual, nodo);
+    }
+    setPrimero(lista, nodo);
+
+};
 
 
 //otros
@@ -139,8 +148,23 @@ int buscarElemento(ListaPtr lista, int dato){
 };
 void ordenarBurbuja(ListaPtr lista){
 
+    int tam = obtenerTam(lista);
+    int aux;
 
+    for(int i = 0; i < tam-1; i++){
+        NodoPtr actual = getPrimero(lista);
+        for(int j = 0; j < tam-1; j++){
+            if(getDato(actual) > getDato(getSiguiente(actual))){
 
-
+                aux = getDato(actual);
+                setDato(actual, getDato(getSiguiente(actual)));
+                setDato(getSiguiente(actual), aux);
+//                aux = actual2;
+//                actual2 = actual1;
+//                actual1 = aux;
+            }
+            actual = getSiguiente(actual);
+        }
+    }
 };
 
