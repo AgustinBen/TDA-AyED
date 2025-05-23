@@ -72,7 +72,6 @@ void funcionFloat(float f){
     printf("\n %.2f ", f);
 }
 
-
 void wrapperInt(void * dato){
 
     int entero = *(int*)dato;

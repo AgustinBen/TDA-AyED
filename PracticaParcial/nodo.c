@@ -18,6 +18,7 @@ NodoPtr crearNodo(DatoPtr dato, NodoPtr siguiente){
     nodo->dato = dato;
     nodo->siguiente = siguiente;
 
+    return nodo;
 };
 
 void mostrarNodoInt(NodoPtr nodo){
