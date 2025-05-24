@@ -4,18 +4,23 @@
 	<stdlib.h>
 	"lista.h"
 
-1747859299 source:d:\ayed\tda-ayed\practicaparcial\nodo.c
+1747861010 source:d:\ayed\tda-ayed\practicaparcial\nodo.c
 	<stdio.h>
 	<stdlib.h>
 	"nodo.h"
 
-1747859564 source:d:\ayed\tda-ayed\practicaparcial\main.c
+1748123583 source:d:\ayed\tda-ayed\practicaparcial\main.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
 
 1747857374 d:\ayed\tda-ayed\practicaparcial\nodo.h
 
-1747862755 d:\ayed\tda-ayed\practicaparcial\lista.h
+1748121815 d:\ayed\tda-ayed\practicaparcial\lista.h
 	"nodo.h"
+
+1748123608 source:d:\ayed\tda-ayed\practicaparcial\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
 

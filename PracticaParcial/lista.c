@@ -21,11 +21,24 @@ ListaPtr crearLista(){
 
 };
 
-void mostrarLista(ListaPtr lista);
+void mostrarLista(ListaPtr lista, void (*wrapper)(void*)){
+    printf("--LISTA---\n");
+    NodoPtr actual = getPrimero(lista);
+
+    while (actual != NULL){
+        wrapper(getDato(actual));
+        actual = getSiguiente(actual);
+    }
+    printf("\n\n");
+};
 
 
 
 //getters y setters
 
 void setPrimero(ListaPtr lista, NodoPtr nodo);
-NodoPtr getPrimero(ListaPtr lista);
+NodoPtr getPrimero(ListaPtr lista){
+
+    return lista->primero;
+
+};
