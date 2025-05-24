@@ -9,7 +9,7 @@
 	<stdlib.h>
 	"nodo.h"
 
-1748123583 source:d:\ayed\tda-ayed\practicaparcial\main.c
+1748127140 source:d:\ayed\tda-ayed\practicaparcial\main.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
@@ -19,7 +19,7 @@
 1748121815 d:\ayed\tda-ayed\practicaparcial\lista.h
 	"nodo.h"
 
-1748123608 source:d:\ayed\tda-ayed\practicaparcial\lista.c
+1748127125 source:d:\ayed\tda-ayed\practicaparcial\lista.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"

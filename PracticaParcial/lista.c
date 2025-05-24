@@ -36,9 +36,21 @@ void mostrarLista(ListaPtr lista, void (*wrapper)(void*)){
 
 //getters y setters
 
-void setPrimero(ListaPtr lista, NodoPtr nodo);
+void setPrimero(ListaPtr lista, NodoPtr nodo){
+
+    lista->primero = nodo;
+
+};
 NodoPtr getPrimero(ListaPtr lista){
 
     return lista->primero;
+
+};
+
+void insertarPrimero(ListaPtr lista, DatoPtr dato){
+
+    NodoPtr nodo = crearNodo(dato, lista->primero);
+
+    lista->primero = nodo;
 
 };

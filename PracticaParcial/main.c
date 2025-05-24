@@ -13,18 +13,16 @@ int main()
 {
     printf("Hello world!\n");
 
-//    int dato1 = 12;
-//    float dato2 = 12.5;
-//    char dato3[] = "Cola cola";
-//
-//    NodoPtr n1 = crearNodo(&dato1, NULL);
-//    NodoPtr n2 = crearNodo(&dato2, NULL);
-//    NodoPtr n3 = crearNodo(&dato3, NULL);
-//
-//    mostrarNodoInt(n1);
-//    mostrarNodoFloat(n2);
-//    mostrarNodoChar(n3);
+    ListaPtr lista = crearLista();
 
+    int n1 = 1, n2 = 2, n3 = 3, n4 = 4;
+
+    insertarPrimero(lista, &n1);
+    insertarPrimero(lista, &n2);
+    insertarPrimero(lista, &n3);
+    insertarPrimero(lista, &n4);
+
+    mostrarLista(lista, &wrapperInt);
 
 
 
@@ -38,13 +36,13 @@ int main()
 
 void mostrarInt(int n){
 
-    printf("\n %d \n", n);
+    printf("{ %d }", n);
 
 }
 
 void mostrarFloat(float f){
 
-    printf("\n %.2f \n", f);
+    printf("{ %.2f }", f);
 
 }
 void mostrarChar(char c[]){
