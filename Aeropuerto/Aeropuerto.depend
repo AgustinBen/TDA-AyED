@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1748195649 source:d:\ayed\tda-ayed\aeropuerto\main.c
+	<stdio.h>
+	<stdlib.h>
+	"aeropuerto.h"
+
+1748196423 source:d:\ayed\tda-ayed\aeropuerto\aeropuerto.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"aeropuerto.h"
+
+1748194596 d:\ayed\tda-ayed\aeropuerto\aeropuerto.h
+
+1748196423 source:d:\ayed\tda-ayed\aeropuerto\avion.c
+	<stdio.h>
+	<stdlib.h>
+
+1748196423 source:d:\ayed\tda-ayed\aeropuerto\pasajeros.c
+	<stdio.h>
+	<stdlib.h>
+
+1748196922 source:d:\ayed\tda-ayed\aeropuerto\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
+1748197118 d:\ayed\tda-ayed\aeropuerto\nodo.h
+
