@@ -15,4 +15,6 @@ DatoPtr getDato(NodoPtr nodo);
 void setSiguiente(NodoPtr nodo, NodoPtr nuevoSig);
 NodoPtr getSiguiente(NodoPtr nodo);
 
+
+
 #endif // NODO_H_INCLUDED

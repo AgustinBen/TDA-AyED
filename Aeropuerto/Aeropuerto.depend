@@ -1,29 +1,50 @@
 # depslib dependency file v1.0
-1748195649 source:d:\ayed\tda-ayed\aeropuerto\main.c
+1748209546 source:d:\ayed\tda-ayed\aeropuerto\main.c
 	<stdio.h>
 	<stdlib.h>
 	"aeropuerto.h"
+	"avion.h"
+	"lista.h"
 
-1748196423 source:d:\ayed\tda-ayed\aeropuerto\aeropuerto.c
+1748209604 source:d:\ayed\tda-ayed\aeropuerto\aeropuerto.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"aeropuerto.h"
 
-1748194596 d:\ayed\tda-ayed\aeropuerto\aeropuerto.h
+1748208442 d:\ayed\tda-ayed\aeropuerto\aeropuerto.h
+	"lista.h"
+	"avion.h"
 
-1748196423 source:d:\ayed\tda-ayed\aeropuerto\avion.c
+1748209649 source:d:\ayed\tda-ayed\aeropuerto\avion.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
+	"avion.h"
 
 1748196423 source:d:\ayed\tda-ayed\aeropuerto\pasajeros.c
 	<stdio.h>
 	<stdlib.h>
 
-1748196922 source:d:\ayed\tda-ayed\aeropuerto\nodo.c
+1748197435 source:d:\ayed\tda-ayed\aeropuerto\nodo.c
 	<stdio.h>
 	<stdlib.h>
 	"nodo.h"
 
-1748197118 d:\ayed\tda-ayed\aeropuerto\nodo.h
+1748202417 d:\ayed\tda-ayed\aeropuerto\nodo.h
+
+1748208798 source:d:\ayed\tda-ayed\aeropuerto\lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1748206533 d:\ayed\tda-ayed\aeropuerto\lista.h
+	"nodo.h"
+
+1748207958 d:\ayed\tda-ayed\aeropuerto\avion.h
+	"lista.h"
+
+1748196423 source:d:\ayed\tda-ayed\aeropuerto\pasajero.c
+	<stdio.h>
+	<stdlib.h>
 

@@ -9,8 +9,8 @@ struct Aeropuerto{
     char nombre[35];
     char direccion[25];
     char localidad[25];
+    ListaPtr aviones;
 
-    //ListaPtr aviones;
 };
 
 AeroPtr crearAeropuerto(char nom[], char dir[], char loc[]){
@@ -20,16 +20,27 @@ AeroPtr crearAeropuerto(char nom[], char dir[], char loc[]){
     strcpy(aeropuerto->nombre, nom);
     strcpy(aeropuerto->direccion, dir);
     strcpy(aeropuerto->localidad, loc);
+    aeropuerto->aviones = crearLista();
 
     return aeropuerto;
 
 };
 
+void insertarAvion(AeroPtr aero, AvionPtr avion){
+
+    insertarUltimo(aero->aviones, avion);
+
+};
+
+
 void mostrarAeropuerto(AeroPtr a){
 
-    printf("\n    ---AEROPUERTO----\n");
+    printf("\n---AEROPUERTO----\n");
     printf("NOMBRE: %s \n", a->nombre);
     printf("DIRECCION: %s \n", a->direccion);
     printf("LOCALIDAD: %s \n", a->localidad);
 
+    mostrarLista(a->aviones, &wrapperAvion);
+
 };
+
