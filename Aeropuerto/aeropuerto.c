@@ -36,9 +36,9 @@ void insertarAvion(AeroPtr aero, AvionPtr avion){
 void mostrarAeropuerto(AeroPtr a){
 
     printf("\n---AEROPUERTO----\n");
-    printf("NOMBRE: %s \n", a->nombre);
-    printf("DIRECCION: %s \n", a->direccion);
-    printf("LOCALIDAD: %s \n", a->localidad);
+    printf(" NOMBRE: %s \n", a->nombre);
+    printf(" DIRECCION: %s \n", a->direccion);
+    printf(" LOCALIDAD: %s \n", a->localidad);
 
     mostrarLista(a->aviones, &wrapperAvion);
 

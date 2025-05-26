@@ -55,7 +55,11 @@ NodoPtr getPrimero(ListaPtr lista){
 
 };
 
-void insertarPrimero(ListaPtr lista, DatoPtr dato);
+void insertarPrimero(ListaPtr lista, DatoPtr dato){
+
+    setPrimero(lista, crearNodo(dato, lista->primero));
+
+};
 void insertarUltimo(ListaPtr lista, DatoPtr dato){
 
     NodoPtr nodo = crearNodo(dato, NULL);
@@ -71,8 +75,40 @@ void insertarUltimo(ListaPtr lista, DatoPtr dato){
     }
 };
 
-void eliminarPrimero(ListaPtr lista);
-void elimarUltimo(ListaPtr lista);
+void eliminarPrimero(ListaPtr lista){
+
+    NodoPtr actual = getPrimero(lista);
+    lista->primero = getSiguiente(actual);
+    free(actual);
+
+};
+
+void eliminarPos(ListaPtr lista, int pos){
+    int tam = obtenerTam(lista);
+
+    if(pos < 0 || pos > tam){
+        printf("\n no se puede eliminar en esa posicion");
+    }else{
+        if(pos == 0){
+            eliminarPrimero(lista);
+        }
+        else{
+            NodoPtr actual = getPrimero(lista);
+            int contar = 0;
+            while (getSiguiente(actual) != NULL){
+                if(contar == pos-1){
+                    NodoPtr siguiente = getSiguiente(actual);
+                    setSiguiente(actual, getSiguiente(getSiguiente(actual)));
+                    free(siguiente);
+                }
+                actual = getSiguiente(actual);
+                contar++;
+            }
+        }
+    }
+};
+
+void eliminarUltimo(ListaPtr lista);
 
 int obtenerTam(ListaPtr lista){
 

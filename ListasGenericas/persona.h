@@ -5,7 +5,7 @@ struct Persona;
 
 typedef struct Persona * PersonaPtr;
 
-PersonaPtr crearPersona(char n[25]);
+PersonaPtr crearPersona(char n[]);
 
 void mostrarPersona(PersonaPtr p);
 

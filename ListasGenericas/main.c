@@ -16,14 +16,17 @@ int main()
     insertarPrimero(lista, &n1);
     insertarPrimero(lista, &n2);
     insertarPrimero(lista, &n3);
-    insertarPrimero(lista, &n4);
-    insertarPrimero(lista, &n5);
     insertarUltimo(lista, &n6);
     insertarPosicion(lista, &n7, 1);
 
     mostrarListaGen(lista, &wrapperInt);
     printf("tam: %d \n", obtenerTamanio(lista));
     printf("Ultimo: %d \n", *(int*)obtenerUltimo(lista));
+
+    printf("-------------------------------------");
+
+    eliminarPos(lista, 0);
+    mostrarListaGen(lista, &wrapperInt);
     //obtenerPrimero(lista);
     //obtenerUltimo(lista);
     //eliminarPrimero(lista);
@@ -33,32 +36,32 @@ int main()
 
     printf("\n--------------------------------------------\n\n");
 
-    ListaPtr listaFloat = crearLista();
-
-    float f1=22.5 , f2=55.5, f3= 0.20, f4=99.9;
-
-    insertarPrimero(listaFloat, &f1);
-    insertarPrimero(listaFloat, &f2);
-    insertarPrimero(listaFloat, &f3);
-    insertarPrimero(listaFloat, &f4);
-
-    mostrarListaGen(listaFloat, &wrapperFloat);
-    printf("tam: %d \n", obtenerTamanio(listaFloat));
-    printf("Ultimo: %.2f \n", *(float*)obtenerUltimo(listaFloat));
-
-    printf("\n--------------------------------------------\n\n");
-
-    PersonaPtr p1 = crearPersona("agustin");
-    PersonaPtr p2 = crearPersona("Karina");
-    PersonaPtr p3 = crearPersona("Ariana");
-
-    ListaPtr listaPer = crearLista();
-
-    insertarPrimero(listaPer, &p1);
-    insertarPrimero(listaPer, &p2);
-    insertarPrimero(listaPer, &p3);
-
-    mostrarListaGen(listaPer, &wrapperPersona);
+//    ListaPtr listaFloat = crearLista();
+//
+//    float f1=22.5 , f2=55.5, f3= 0.20, f4=99.9;
+//
+//    insertarPrimero(listaFloat, &f1);
+//    insertarPrimero(listaFloat, &f2);
+//    insertarPrimero(listaFloat, &f3);
+//    insertarPrimero(listaFloat, &f4);
+//
+//    mostrarListaGen(listaFloat, &wrapperFloat);
+//    printf("tam: %d \n", obtenerTamanio(listaFloat));
+//    printf("Ultimo: %.2f \n", *(float*)obtenerUltimo(listaFloat));
+//
+//    printf("\n--------------------------------------------\n\n");
+//
+//    PersonaPtr p1 = crearPersona("agustin");
+//    PersonaPtr p2 = crearPersona("Karina");
+//    PersonaPtr p3 = crearPersona("Ariana");
+//
+//    ListaPtr listaPer = crearLista();
+//
+//    insertarPrimero(listaPer, &p1);
+//    insertarPrimero(listaPer, &p2);
+//    insertarPrimero(listaPer, &p3);
+//
+//    mostrarListaGen(listaPer, &wrapperPersona);
 
     return 0;
 }

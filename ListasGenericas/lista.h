@@ -9,6 +9,8 @@ typedef struct Lista * ListaPtr;
 
 ListaPtr crearLista();
 
+NodoPtr getPrimero(ListaPtr lista);
+
 void insertarPrimero(ListaPtr lista, DatoPtr dato);
 void insertarUltimo(ListaPtr lista, DatoPtr dato);
 void insertarPosicion(ListaPtr lista, DatoPtr dato, int posicion); //tarea
@@ -38,6 +40,6 @@ void mostrarListaGen(ListaPtr lista, void(*mostrar)(void*));
 //void mostrarListaChar(ListaPtr lista);
 
 void liberarLista(ListaPtr lista);
-
+void eliminarPos(ListaPtr lista, int pos);
 
 #endif // LISTA_H_INCLUDED

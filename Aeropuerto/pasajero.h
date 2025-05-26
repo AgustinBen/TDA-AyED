@@ -5,5 +5,9 @@ struct Pasajero;
 
 typedef struct Pasajero * PasajeroPtr;
 
+PasajeroPtr crearPasajero(char nom[], int edad, char ven);
+
+void mostrarPasajero(PasajeroPtr p);
+void wrapperPasajero(void * dato);
 
 #endif // PASAJEROS_H_INCLUDED

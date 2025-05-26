@@ -119,10 +119,16 @@ DatoPtr obtenerPosicion(ListaPtr lista, int pos){
             }
 }; //tarea
 
+NodoPtr getPrimero(ListaPtr lista){
+
+    return lista->primero;
+};
+
 DatoPtr eliminarPrimero(ListaPtr lista){
     NodoPtr segundo = getSiguiente(lista->primero);
     lista->primero = segundo;
 };
+
 DatoPtr eliminarUltimo(ListaPtr lista){
     int pos = obtenerTamanio(lista);
     int contar = 0;
@@ -156,8 +162,8 @@ ListaPtr duplicarLista(ListaPtr lista);//tarea
 
 int buscarElemento(ListaPtr lista, DatoPtr datoBuscado);//tarea
 
-void insertarEnOrden(ListaPtr lista, DatoPtr dato);//tarea, si la lista está ordenada cada vez que
-//se inserta se inserta en la posición que corresponda
+void insertarEnOrden(ListaPtr lista, DatoPtr dato);//tarea, si la lista estï¿½ ordenada cada vez que
+//se inserta se inserta en la posiciï¿½n que corresponda
 
 
 //void mostrarLista(ListaPtr lista){
@@ -210,3 +216,28 @@ void liberarLista(ListaPtr lista) {
 
     };
 }
+
+void eliminarPos(ListaPtr lista, int pos){
+    int tam = obtenerTamanio(lista);
+
+    if(pos < 0 || pos > tam){
+        printf("\n no se puede eliminar en esa posicion");
+    }else{
+        if(pos == 0){
+            eliminarPrimero(lista);
+        }
+        else{
+            NodoPtr actual = getPrimero(lista);
+            int contar = 0;
+            while (getSiguiente(actual) != NULL){
+                if(contar == pos-1){
+                    NodoPtr siguiente = getSiguiente(actual);
+                    setSiguiente(actual, getSiguiente(getSiguiente(actual)));
+                    free(siguiente);
+                }
+                actual = getSiguiente(actual);
+                contar++;
+            }
+        }
+    }
+};

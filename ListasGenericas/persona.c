@@ -9,7 +9,7 @@ struct Persona{
 
 };
 
-PersonaPtr crearPersona(char n[25]){
+PersonaPtr crearPersona(char n[]){
 
     PersonaPtr p = (PersonaPtr)malloc(sizeof(struct Persona));
 

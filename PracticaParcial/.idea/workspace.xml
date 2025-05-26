@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b7442ffc-7ab0-4d8b-825b-1f85c9b79775" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/Aeropuerto.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/Aeropuerto.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/Aeropuerto.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/Aeropuerto.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/aeropuerto.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/aeropuerto.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/aeropuerto.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/aeropuerto.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/avion.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/avion.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/avion.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/avion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/bin/Debug/Aeropuerto.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/bin/Debug/Aeropuerto.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/lista.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/lista.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/aeropuerto.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/aeropuerto.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/avion.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/avion.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/lista.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/lista.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/pasajero.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/obj/Debug/pasajero.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/pasajero.c" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/pasajero.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Aeropuerto/pasajero.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Aeropuerto/pasajero.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/bin/Debug/listas_int.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/bin/Debug/listas_int.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/lista.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/lista.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/lista.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/lista.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/listas_gen.depend" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/listas_gen.depend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/listas_gen.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/listas_gen.layout" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/obj/Debug/lista.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/obj/Debug/lista.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/obj/Debug/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/obj/Debug/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/obj/Debug/persona.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/obj/Debug/persona.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/persona.c" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/persona.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasGenericas/persona.h" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasGenericas/persona.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ListasInt/Listas_Int.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../ListasInt/Listas_Int.layout" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2xe2qaODun2nSHqfBlWP0t0orqS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/AyED/TDA-AyED/PracticaParcial"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7442ffc-7ab0-4d8b-825b-1f85c9b79775" name="Changes" comment="" />
+      <created>1748284409825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748284409825</updated>
+    </task>
+    <servers />
+  </component>
+</project>
