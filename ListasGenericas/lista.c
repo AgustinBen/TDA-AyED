@@ -52,7 +52,7 @@ void insertarUltimo(ListaPtr lista, DatoPtr dato){
 
 void insertarPosicion(ListaPtr lista, DatoPtr dato, int posicion){
     //NodoPtr nuevoNodo = crearNodo(dato, NULL);
-    int tam = obtenerTamanio(lista);
+    int tam = obtenerTam(lista);
 
     if(posicion < 0 || posicion > tam+1){
         printf("\nNo se puede guardar en esa posicion!\n");
@@ -92,7 +92,7 @@ DatoPtr obtenerUltimo(ListaPtr lista){
 }; //tarea
 DatoPtr obtenerPosicion(ListaPtr lista, int pos){
 
-    int tam = obtenerTamanio(lista);
+    int tam = obtenerTam(lista);
 
     if (pos < 0 || pos > tam+1){
         printf("No se puede buscar en esa posicion!");
@@ -130,7 +130,7 @@ DatoPtr eliminarPrimero(ListaPtr lista){
 };
 
 DatoPtr eliminarUltimo(ListaPtr lista){
-    int pos = obtenerTamanio(lista);
+    int pos = obtenerTam(lista);
     int contar = 0;
     NodoPtr nodoActual = lista->primero;
 
@@ -144,7 +144,7 @@ DatoPtr eliminarUltimo(ListaPtr lista){
 
 DatoPtr eliminarposicion(ListaPtr lista, int pos); //tarea
 
-int obtenerTamanio(ListaPtr lista){
+int obtenerTam(ListaPtr lista){
     int nodoTam = 0;
 
     NodoPtr nodoActual = lista->primero;
@@ -156,9 +156,54 @@ int obtenerTamanio(ListaPtr lista){
     return nodoTam;
 }; //tarea
 
-void ordenarLista(ListaPtr lista);//tarea
-ListaPtr ordenarListaCopia(ListaPtr lista);//tarea
-ListaPtr duplicarLista(ListaPtr lista);//tarea
+//void ordenarLista(ListaPtr lista, int (*comparar)(void*, void*)){
+//
+//    NodoPtr actual = getPrimero(lista);
+//
+//    while(actual != NULL){
+//        if(comparar(getDato(actual), getDato(getSiguiente(actual)))){
+//
+//            void* aux = getDato(actual);
+//            setDato(actual, getDato(getSiguiente(actual)));
+//            setDato(getSiguiente(actual), aux);
+//
+//        }
+//        actual = getSiguiente(actual);
+//    }
+//};
+
+void ordenarLista(ListaPtr lista, int(*comparar)(void* , void*)){
+
+	int permutacion;
+	NodoPtr nodo;
+	NodoPtr ultimo = NULL;
+
+	if(obtenerTam(lista)<2){
+	//no hago nada
+
+	}else{
+
+		do{
+
+			permutacion = 0;
+			nodo = lista->primero;
+
+			while(getSiguiente(nodo) != ultimo){
+
+			     if(comparar(getDato(nodo), getDato(getSiguiente(nodo)))){
+
+				DatoPtr aux = getDato(nodo);
+				setDato(nodo, getDato(getSiguiente(nodo)));
+				setDato(getSiguiente(nodo), aux);
+				permutacion = 1;
+				}
+				nodo = getSiguiente(nodo);
+			}
+			ultimo = nodo; //opcional
+
+        }while(permutacion != 0);
+	}
+};
 
 int buscarElemento(ListaPtr lista, DatoPtr datoBuscado);//tarea
 
@@ -166,22 +211,10 @@ void insertarEnOrden(ListaPtr lista, DatoPtr dato);//tarea, si la lista est� o
 //se inserta se inserta en la posici�n que corresponda
 
 
-//void mostrarLista(ListaPtr lista){
-//
-//    printf("\n<LISTA INT>\n");
-//    NodoPtr actual = lista->primero;
-//
-//    while (actual!=NULL){
-//
-//        mostrarNodo(actual);
-//        actual = getSiguiente(actual);
-//    }
-//    printf("\n\n");
-//};
 
 void mostrarListaGen(ListaPtr lista, void (*mostrar)(void*)){
 
-    printf("\n<LISTA> TAM: %d \n\n", obtenerTamanio(lista));
+    printf("\n<LISTA> TAM: %d \n\n", obtenerTam(lista));
     NodoPtr actual = lista->primero;
 
     while (actual!=NULL){
@@ -192,18 +225,6 @@ void mostrarListaGen(ListaPtr lista, void (*mostrar)(void*)){
     printf("\n\n");
 };
 
-//void mostrarListaChar(ListaPtr lista){
-//
-//    printf("\n<LISTA CHAR>\n");
-//    NodoPtr actual = lista->primero;
-//
-//    while (actual!=NULL){
-//
-//        mostrarNodoChar(actual);
-//        actual = getSiguiente(actual);
-//    }
-//    printf("\n\n");
-//};
 
 void liberarLista(ListaPtr lista) {
 
@@ -218,26 +239,23 @@ void liberarLista(ListaPtr lista) {
 }
 
 void eliminarPos(ListaPtr lista, int pos){
-    int tam = obtenerTamanio(lista);
+    int tam = obtenerTam(lista);
 
-    if(pos < 0 || pos > tam){
+    if(pos < 0 || pos >= tam){
         printf("\n no se puede eliminar en esa posicion");
     }else{
         if(pos == 0){
             eliminarPrimero(lista);
-        }
-        else{
-            NodoPtr actual = getPrimero(lista);
+        }else{
+            NodoPtr actual = lista->primero;
+            NodoPtr anterior = NULL;
             int contar = 0;
-            while (getSiguiente(actual) != NULL){
-                if(contar == pos-1){
-                    NodoPtr siguiente = getSiguiente(actual);
-                    setSiguiente(actual, getSiguiente(getSiguiente(actual)));
-                    free(siguiente);
-                }
+            while(contar < pos){
+                anterior = actual;
                 actual = getSiguiente(actual);
                 contar++;
             }
+            setSiguiente(anterior, getSiguiente(actual));
         }
     }
 };

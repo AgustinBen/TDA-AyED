@@ -159,9 +159,6 @@ void ordenarBurbuja(ListaPtr lista){
                 aux = getDato(actual);
                 setDato(actual, getDato(getSiguiente(actual)));
                 setDato(getSiguiente(actual), aux);
-//                aux = actual2;
-//                actual2 = actual1;
-//                actual1 = aux;
             }
             actual = getSiguiente(actual);
         }

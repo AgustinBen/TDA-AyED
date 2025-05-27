@@ -98,17 +98,17 @@ void insertarPasajeroPri(AvionPtr a, PasajeroPtr p);
 //    }
 //}
 
-void ordenarPasajeros(AvionPtr a){
-    int tam = obtenerTam(a->pasajerosL);
-    NodoPtr actual = getPrimero(a->pasajerosL);
-
-    for(int i = 0; i < tam-1; i++){
-        PasajeroPtr p = (PersonaPtr)actual;
-        for(int j = 0; j < tam; i++){
-            if(actual->)
-
-        }
-    }
-
-
-};
+//void ordenarPasajeros(AvionPtr a){
+//    int tam = obtenerTam(a->pasajerosL);
+//    NodoPtr actual = getPrimero(a->pasajerosL);
+//
+//    for(int i = 0; i < tam-1; i++){
+//        PasajeroPtr p = (PersonaPtr)actual;
+//        for(int j = 0; j < tam; i++){
+//            if(actual->)
+//
+//        }
+//    }
+//
+//
+//};

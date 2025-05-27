@@ -3,10 +3,6 @@
 #include "lista.h"
 #include "persona.h"
 
-void funcionFloat(float f);
-void funcionInt(int n);
-void wrapperInt(void * dato);
-void wrapperFloat(void * dato);
 
 int main()
 {
@@ -20,12 +16,13 @@ int main()
     insertarPosicion(lista, &n7, 1);
 
     mostrarListaGen(lista, &wrapperInt);
-    printf("tam: %d \n", obtenerTamanio(lista));
     printf("Ultimo: %d \n", *(int*)obtenerUltimo(lista));
 
     printf("-------------------------------------");
 
-    eliminarPos(lista, 0);
+    //ordenarLista(lista);
+    //eliminarPos(lista, 4);
+    ordenarLista(lista, compararInt);
     mostrarListaGen(lista, &wrapperInt);
     //obtenerPrimero(lista);
     //obtenerUltimo(lista);
@@ -66,26 +63,4 @@ int main()
     return 0;
 }
 
-void funcionInt(int n){
 
-    printf("\n %d ", n);
-}
-void funcionFloat(float f){
-
-    printf("\n %.2f ", f);
-}
-
-void wrapperInt(void * dato){
-
-    int entero = *(int*)dato;
-
-    funcionInt(entero);
-
-}
-void wrapperFloat(void * dato){
-
-    float flotante = *(float*)dato;
-
-    funcionFloat(flotante);
-
-}

@@ -65,3 +65,40 @@ void setSiguiente(NodoPtr nodo, NodoPtr nuevoSiguiente){
 };
 
 
+
+void funcionInt(int n){
+
+    printf("\n %d ", n);
+};
+void funcionFloat(float f){
+
+    printf("\n %.2f ", f);
+};
+
+void wrapperInt(void * dato){
+
+    int entero = *(int*)dato;
+
+    funcionInt(entero);
+
+};
+void wrapperFloat(void * dato){
+
+    float flotante = *(float*)dato;
+
+    funcionFloat(flotante);
+
+};
+
+
+int compararInt(DatoPtr d1, DatoPtr d2){
+
+    int dato1 = *(int*)d1;
+    int dato2 = *(int*)d2;
+
+
+    return dato1 > dato2;
+
+};
+int compararFloat(DatoPtr d1, DatoPtr d2);
+int compararChar(DatoPtr, DatoPtr);

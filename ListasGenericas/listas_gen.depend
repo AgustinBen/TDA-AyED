@@ -1,21 +1,21 @@
 # depslib dependency file v1.0
-1748282184 source:d:\ayed\tda-ayed\listasgenericas\lista.c
+1748309143 source:d:\ayed\tda-ayed\listasgenericas\lista.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
 
-1748281796 d:\ayed\tda-ayed\listasgenericas\lista.h
+1748302527 d:\ayed\tda-ayed\listasgenericas\lista.h
 	"nodo.h"
 
-1747497622 d:\ayed\tda-ayed\listasgenericas\nodo.h
+1748302543 d:\ayed\tda-ayed\listasgenericas\nodo.h
 
-1748282107 source:d:\ayed\tda-ayed\listasgenericas\main.c
+1748309142 source:d:\ayed\tda-ayed\listasgenericas\main.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
 	"persona.h"
 
-1747500082 source:d:\ayed\tda-ayed\listasgenericas\nodo.c
+1748306851 source:d:\ayed\tda-ayed\listasgenericas\nodo.c
 	<stdio.h>
 	<stdlib.h>
 	"nodo.h"

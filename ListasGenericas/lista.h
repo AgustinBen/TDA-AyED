@@ -24,11 +24,9 @@ DatoPtr eliminarPrimero(ListaPtr lista);
 DatoPtr eliminarUltimo(ListaPtr lista); //tarea
 DatoPtr eliminarposicion(ListaPtr lista, int pos); //tarea
 
-int obtenerTamanio(ListaPtr lista);
+int obtenerTam(ListaPtr lista);
 
-void ordenarLista(ListaPtr lista);//tarea
-ListaPtr ordenarListaCopia(ListaPtr lista);//tarea
-ListaPtr duplicarLista(ListaPtr lista);//tarea
+void ordenarLista(ListaPtr lista, int (*comparar)(void*, void*));
 
 int buscarElemento(ListaPtr lista, DatoPtr datoBuscado);//tarea
 

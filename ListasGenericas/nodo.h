@@ -19,7 +19,14 @@ void setDato(NodoPtr nodo, DatoPtr nuevoDato);
 NodoPtr getSiguiente(NodoPtr nodo);
 void setSiguiente(NodoPtr nodo, NodoPtr nuevoSiguiente);
 
+void funcionFloat(float f);
+void funcionInt(int n);
+void wrapperInt(void * dato);
+void wrapperFloat(void * dato);
 
+int compararInt(DatoPtr d1, DatoPtr d2);
+int compararFloat(DatoPtr d1, DatoPtr d2);
+int compararChar(DatoPtr d1, DatoPtr d2);
 
 
 
