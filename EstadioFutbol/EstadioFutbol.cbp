@@ -31,9 +31,29 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="estadio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="estadio.h" />
+		<Unit filename="estadistica.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="estadistica.h" />
+		<Unit filename="jugador.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="jugador.h" />
+		<Unit filename="lista.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lista.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="nodo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nodo.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

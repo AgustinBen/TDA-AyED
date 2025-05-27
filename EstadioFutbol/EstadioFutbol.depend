@@ -1,26 +1,26 @@
 # depslib dependency file v1.0
-1748316761 source:d:\ayed\tda-ayed\estadiofutbol\estadio.c
+1748348960 source:d:\ayed\tda-ayed\estadiofutbol\estadio.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"estadio.h"
 
-1748316762 d:\ayed\tda-ayed\estadiofutbol\estadio.h
+1748348221 d:\ayed\tda-ayed\estadiofutbol\estadio.h
 	"lista.h"
 	"jugador.h"
 
-1748317282 source:d:\ayed\tda-ayed\estadiofutbol\jugador.c
+1748349640 source:d:\ayed\tda-ayed\estadiofutbol\jugador.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"jugador.h"
 
-1748317335 source:d:\ayed\tda-ayed\estadiofutbol\lista.c
+1748320478 source:d:\ayed\tda-ayed\estadiofutbol\lista.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
 
-1748317020 source:d:\ayed\tda-ayed\estadiofutbol\main.c
+1748349582 source:d:\ayed\tda-ayed\estadiofutbol\main.c
 	<stdio.h>
 	<stdlib.h>
 	"estadio.h"
@@ -34,9 +34,17 @@
 
 1748313138 d:\ayed\tda-ayed\estadiofutbol\nodo.h
 
-1748317016 d:\ayed\tda-ayed\estadiofutbol\lista.h
+1748320325 d:\ayed\tda-ayed\estadiofutbol\lista.h
 	"nodo.h"
 	"jugador.h"
 
-1748317379 d:\ayed\tda-ayed\estadiofutbol\jugador.h
+1748319727 d:\ayed\tda-ayed\estadiofutbol\jugador.h
+	"estadistica.h"
+
+1748319231 d:\ayed\tda-ayed\estadiofutbol\estadistica.h
+
+1748319240 source:d:\ayed\tda-ayed\estadiofutbol\estadistica.c
+	<stdio.h>
+	<stdlib.h>
+	"estadistica.h"
 

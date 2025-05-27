@@ -18,5 +18,7 @@ void ordenarLista(ListaPtr lista, int(*comparar)(DatoPtr, DatoPtr));
 
 void insertarPrimero(ListaPtr lista, DatoPtr d);
 
+int obtenerTam(ListaPtr lista);
+
 
 #endif // LISTA_H_INCLUDED

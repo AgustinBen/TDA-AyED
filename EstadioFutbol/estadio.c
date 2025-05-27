@@ -24,7 +24,7 @@ EstadioPtr crearEstadio(char* nom, int cap){
     return estadio;
 };
 
-ListaPtr getListaEstadio(EstadioPtr e){
+ListaPtr getListaJug(EstadioPtr e){
 
     return e->jugadoresL;
 };
@@ -43,4 +43,6 @@ void mostrarEstadio(EstadioPtr e){
     printf("Capacidad: %d \n", e->capacidad);
 
     mostrarLista(e->jugadoresL, &wrapperJugador);
+
+    printf("-----------------------------------------------")
 };

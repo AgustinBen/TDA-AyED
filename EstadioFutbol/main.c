@@ -32,7 +32,10 @@ int main()
     insertarJugador(est1, j4);
     insertarJugador(est1, j5);
 
-    ordenarLista(getListaEstadio(est1), compararJug);
+    mostrarEstadio(est1);
+
+
+    ordenarLista(getListaJug(est1), compararMinJug);
     mostrarEstadio(est1);
 
 

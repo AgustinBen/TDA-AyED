@@ -9,7 +9,7 @@ typedef struct Estadio * EstadioPtr;
 
 EstadioPtr crearEstadio(char* nombre, int capacidad);
 
-ListaPtr getListaEstadio(EstadioPtr e);
+ListaPtr getListaJug(EstadioPtr e);
 
 void insertarJugador(EstadioPtr estadio, JugadorPtr j);
 
