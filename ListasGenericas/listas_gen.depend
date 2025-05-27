@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1748309143 source:d:\ayed\tda-ayed\listasgenericas\lista.c
+1748311623 source:d:\ayed\tda-ayed\listasgenericas\lista.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"

@@ -172,37 +172,60 @@ int obtenerTam(ListaPtr lista){
 //    }
 //};
 
-void ordenarLista(ListaPtr lista, int(*comparar)(void* , void*)){
+//void ordenarLista(ListaPtr lista, int(*comparar)(void* , void*)){
+//
+//	int permutacion;
+//	NodoPtr nodo;
+//	NodoPtr ultimo = NULL;
+//
+//	if(obtenerTam(lista)<2){
+//	//no hago nada
+//
+//	}else{
+//
+//		do{
+//
+//			permutacion = 0;
+//			nodo = lista->primero;
+//
+//			while(getSiguiente(nodo) != ultimo){
+//
+//			     if(comparar(getDato(nodo), getDato(getSiguiente(nodo)))){
+//
+//				DatoPtr aux = getDato(nodo);
+//				setDato(nodo, getDato(getSiguiente(nodo)));
+//				setDato(getSiguiente(nodo), aux);
+//				permutacion = 1;
+//				}
+//				nodo = getSiguiente(nodo);
+//			}
+//			ultimo = nodo; //opcional
+//
+//        }while(permutacion != 0);
+//	}
+//};
 
-	int permutacion;
-	NodoPtr nodo;
-	NodoPtr ultimo = NULL;
+void ordenarLista(ListaPtr lista, int (*comparar)(void* , void*)){
 
-	if(obtenerTam(lista)<2){
-	//no hago nada
+    NodoPtr actual;
+    int cambios;
 
-	}else{
+    do{
+        actual = getPrimero(lista);
+        cambios = 0;
 
-		do{
+        while(getSiguiente(actual) != NULL){
+            if(comparar(getDato(actual), getDato(getSiguiente(actual)))){
 
-			permutacion = 0;
-			nodo = lista->primero;
+                DatoPtr aux = getDato(actual);
+                setDato(actual, getDato(getSiguiente(actual)));
+                setDato(getSiguiente(actual), aux);
 
-			while(getSiguiente(nodo) != ultimo){
-
-			     if(comparar(getDato(nodo), getDato(getSiguiente(nodo)))){
-
-				DatoPtr aux = getDato(nodo);
-				setDato(nodo, getDato(getSiguiente(nodo)));
-				setDato(getSiguiente(nodo), aux);
-				permutacion = 1;
-				}
-				nodo = getSiguiente(nodo);
-			}
-			ultimo = nodo; //opcional
-
-        }while(permutacion != 0);
-	}
+                cambios++;
+            }
+            actual = getSiguiente(actual);
+        }
+    }while(cambios != 0);
 };
 
 int buscarElemento(ListaPtr lista, DatoPtr datoBuscado);//tarea
