@@ -34,7 +34,6 @@ int main()
 
     mostrarEstadio(est1);
 
-
     ordenarLista(getListaJug(est1), compararMinJug);
     mostrarEstadio(est1);
 

@@ -42,65 +42,66 @@ void setPrimero(ListaPtr lista, NodoPtr nuevoPrimero){
 
 };
 
-//void ordenarLista(ListaPtr lista, int(*comparar)(DatoPtr, DatoPtr)){
-//    //2) Ordenar la lista de jugadores por cantidad de minutos en cancha de cada jugador (de mayor a menor)
-//    NodoPtr actual;
-//    int cambios;
+
+
+//void ordenarLista(ListaPtr lista, int(*comparar)(void* , void*)){
 //
-//    do{
-//        actual = getPrimero(lista);
-//        cambios = 0;
+//	int permutacion;
+//	NodoPtr nodo;
+//	NodoPtr ultimo = NULL;
 //
-//        while(actual != NULL){
+//	if(obtenerTam(lista)<2){
+//	//no hago nada
 //
-//            if(comparar(getDato(actual), getDato(getSiguiente(actual)))){
+//	}else{
 //
-//                DatoPtr aux = getDato(actual);
-//                setDato(actual, getDato(getSiguiente(actual)));
-//                setDato(getSiguiente(actual), aux);
+//		do{
 //
-//                cambios++;
-//            }
-//            actual = getSiguiente(actual);
-//        }
+//			permutacion = 0;
+//			nodo = lista->primero;
 //
-//    }while(cambios != 0);
+//			while(getSiguiente(nodo) != ultimo){
+//
+//			     if(comparar(getDato(nodo), getDato(getSiguiente(nodo)))){
+//
+//				DatoPtr aux = getDato(nodo);
+//				setDato(nodo, getDato(getSiguiente(nodo)));
+//				setDato(getSiguiente(nodo), aux);
+//				permutacion = 1;
+//				}
+//				nodo = getSiguiente(nodo);
+//			}
+//			ultimo = nodo; //opcional
+//
+//        }while(permutacion != 0);
+//	}
 //};
 
+void ordenarLista(ListaPtr lista, int (*comparar)(void* , void* )){
+    //2) Ordenar la lista de jugadores por cantidad de minutos en cancha de cada jugador (de mayor a menor)
 
-void ordenarLista(ListaPtr lista, int(*comparar)(void* , void*)){
+    NodoPtr actual;
+    int cambios;
 
-	int permutacion;
-	NodoPtr nodo;
-	NodoPtr ultimo = NULL;
+    do{
+        actual = getPrimero(lista);
+        cambios = 0;
 
-	if(obtenerTam(lista)<2){
-	//no hago nada
+        while(getSiguiente(actual) != NULL){
+            if(comparar(getDato(actual), getDato(getSiguiente(actual)))){
 
-	}else{
+                DatoPtr aux = getDato(actual);
+                setDato(actual, getDato(getSiguiente(actual)));
+                setDato(getSiguiente(actual), aux);
 
-		do{
+                cambios = 1;
+            }
+            actual = getSiguiente(actual);
+        }
 
-			permutacion = 0;
-			nodo = lista->primero;
+    }while(cambios != 0);
 
-			while(getSiguiente(nodo) != ultimo){
-
-			     if(comparar(getDato(nodo), getDato(getSiguiente(nodo)))){
-
-				DatoPtr aux = getDato(nodo);
-				setDato(nodo, getDato(getSiguiente(nodo)));
-				setDato(getSiguiente(nodo), aux);
-				permutacion = 1;
-				}
-				nodo = getSiguiente(nodo);
-			}
-			ultimo = nodo; //opcional
-
-        }while(permutacion != 0);
-	}
 };
-
 
 void insertarPrimero(ListaPtr lista, DatoPtr d){
 

@@ -44,5 +44,5 @@ void mostrarEstadio(EstadioPtr e){
 
     mostrarLista(e->jugadoresL, &wrapperJugador);
 
-    printf("-----------------------------------------------")
+    printf("-----------------------------------------------");
 };

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1748348960 source:d:\ayed\tda-ayed\estadiofutbol\estadio.c
+1748350039 source:d:\ayed\tda-ayed\estadiofutbol\estadio.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -15,12 +15,12 @@
 	<string.h>
 	"jugador.h"
 
-1748320478 source:d:\ayed\tda-ayed\estadiofutbol\lista.c
+1748542560 source:d:\ayed\tda-ayed\estadiofutbol\lista.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
 
-1748349582 source:d:\ayed\tda-ayed\estadiofutbol\main.c
+1748350039 source:d:\ayed\tda-ayed\estadiofutbol\main.c
 	<stdio.h>
 	<stdlib.h>
 	"estadio.h"
