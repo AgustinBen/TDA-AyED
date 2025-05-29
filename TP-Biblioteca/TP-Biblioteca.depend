@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1748545596 source:d:\ayed\tda-ayed\tp-biblioteca\cola.c
+	<stdio.h>
+	<stdlib.h>
+
+1740933562 source:d:\ayed\tda-ayed\tp-biblioteca\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1748545578 source:d:\ayed\tda-ayed\tp-biblioteca\pila.c
+	<stdio.h>
+	<stdlib.h>
+
