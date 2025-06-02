@@ -1,8 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "biblioteca.h"
 
 int main()
 {
-    printf("Hello world!\n");
+    BiPtr biblioteca = crearBiblioteca("Domingo F. Sarmiento");
+
+    mostrarBiblioteca(biblioteca);
+
+    printf("\n  Bienvenido!\n");
+
+
     return 0;
 }
