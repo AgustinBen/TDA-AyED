@@ -1,13 +1,28 @@
 # depslib dependency file v1.0
-1748545596 source:d:\ayed\tda-ayed\tp-biblioteca\cola.c
+1748743953 source:d:\ayed\tda-ayed\tp-biblioteca\cola.c
 	<stdio.h>
 	<stdlib.h>
+	"cola.h"
 
 1740933562 source:d:\ayed\tda-ayed\tp-biblioteca\main.c
 	<stdio.h>
 	<stdlib.h>
 
-1748545578 source:d:\ayed\tda-ayed\tp-biblioteca\pila.c
+1748742756 source:d:\ayed\tda-ayed\tp-biblioteca\pila.c
 	<stdio.h>
 	<stdlib.h>
+	"pila.h"
+
+1748546689 source:d:\ayed\tda-ayed\tp-biblioteca\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
+1748545928 d:\ayed\tda-ayed\tp-biblioteca\nodo.h
+
+1748742376 d:\ayed\tda-ayed\tp-biblioteca\cola.h
+	"nodo.h"
+
+1748743845 d:\ayed\tda-ayed\tp-biblioteca\pila.h
+	"nodo.h"
 

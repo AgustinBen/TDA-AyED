@@ -4,7 +4,7 @@
 
 struct Pila{
 
-    NodoPtr ultimo;
+    NodoPtr tope;
 
 };
 
@@ -12,13 +12,19 @@ PilaPtr crearPila(){
 
     PilaPtr pila = (PilaPtr)malloc(sizeof(struct Pila));
 
-    pila->ultimo = NULL;
+    pila->tope = NULL;
 
     return pila;
 
 };
 
-void insertarUltimo(PilaPtr pila, DatoPtr dato);
+void insertarEnPila(PilaPtr pila, DatoPtr dato){
+
+    NodoPtr nuevoNodo = crearNodo(dato, pila->tope);
+
+    pila->tope = nuevoNodo;
+
+};
 
 DatoPtr eliminarUltimo(PilaPtr pila);
 
