@@ -9,4 +9,6 @@ LibroPtr crearLibro(char* titulo, char* autor);
 
 void mostrarLibro(LibroPtr libro);
 
+void liberarLibro(LibroPtr libro);
+
 #endif // LIBRO_H_INCLUDED

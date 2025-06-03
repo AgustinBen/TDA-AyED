@@ -12,5 +12,6 @@ void setDato(NodoPtr nodo, DatoPtr nuevoDato);
 DatoPtr getDato(NodoPtr nodo);
 void setSiguiente(NodoPtr nodo, NodoPtr nuevoSiguiente);
 NodoPtr getSiguiente(NodoPtr nodo);
+void liberarNodo(NodoPtr nodo);
 
 #endif // NODO_H_INCLUDED

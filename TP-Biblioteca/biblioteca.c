@@ -2,14 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "biblioteca.h"
-#include "cola.h"
-#include "pila.h"
 
 struct Biblioteca{
 
     char nombre[30];
-    PilaPtr listaLibros;
-    ColaPtr listaUsuarios;
+    PilaPtr pilaLibros;
+    ColaPtr colaUsuarios;
 
 };
 
@@ -20,8 +18,8 @@ BiPtr crearBiblioteca(char* nombre){
 
     strcpy(biblio->nombre, nombre);
 
-    biblio->listaLibros = crearPila();
-    biblio->listaUsuarios = crearCola();
+    biblio->pilaLibros = crearPila();
+    biblio->colaUsuarios = crearCola();
 
     return biblio;
 
@@ -32,3 +30,27 @@ void mostrarBiblioteca(BiPtr biblio){
     printf("\n-- Biblioteca %s --\n", biblio->nombre);
 
 };
+
+void insertarUsuario();
+
+void devolverLibro(BiPtr biblio, LibroPtr libro){
+
+    insertarEnPila(biblio->pilaLibros, libro);
+
+    printf("\n { Libro devuelto }\n");
+    mostrarLibro(libro);
+
+}; //detalles del libro devuelto
+
+
+void reubicarLibro(BiPtr biblio){
+
+    if(getUltimo(biblio->pilaLibros) == NULL){
+        printf("pila de libros vacia!");
+    }else{
+        eliminarUltimo(biblio->pilaLibros);
+    }
+
+};
+void registrarSolicitud();
+void procesarPrestamo(); //detalles de usuario

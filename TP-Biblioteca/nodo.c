@@ -39,3 +39,9 @@ NodoPtr getSiguiente(NodoPtr nodo){
     return nodo->siguiente;
 
 };
+
+void liberarNodo(NodoPtr nodo){
+
+    free(nodo);
+
+}

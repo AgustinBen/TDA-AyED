@@ -5,7 +5,7 @@
 
 struct Libro{
 
-    char titulo[25];
+    char titulo[45];
     char autor[25];
 
 };
@@ -22,4 +22,16 @@ LibroPtr crearLibro(char* titulo, char* autor){
 
 };
 
-void mostrarLibro(LibroPtr libro);
+void mostrarLibro(LibroPtr libro){
+
+        //printf("\n -Libro- \n");
+        printf("  Titulo: %s\n", libro->titulo);
+        printf("  Autor:  %s\n", libro->autor);
+
+};
+
+void liberarLibro(LibroPtr libro){
+
+    free(libro);
+
+};

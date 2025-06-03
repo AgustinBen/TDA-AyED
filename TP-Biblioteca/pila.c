@@ -26,8 +26,16 @@ void insertarEnPila(PilaPtr pila, DatoPtr dato){
 
 };
 
-DatoPtr eliminarUltimo(PilaPtr pila);
+DatoPtr eliminarUltimo(PilaPtr pila){
 
-DatoPtr getUltimo(PilaPtr pila);
+    pila->tope = getSiguiente(pila->tope);
+
+};
+
+DatoPtr getUltimo(PilaPtr pila){
+
+    return pila->tope;
+
+};
 
 void liberarPila(PilaPtr pila);
