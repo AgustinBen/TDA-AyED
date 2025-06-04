@@ -32,6 +32,5 @@ int main()
     reubicarLibro(biblioteca);
 
 
-
     return 0;
 }

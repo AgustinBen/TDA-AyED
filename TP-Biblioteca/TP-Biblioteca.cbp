@@ -31,10 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="biblioteca.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="biblioteca.h" />
 		<Unit filename="cola.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="cola.h" />
+		<Unit filename="libro.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libro.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -46,6 +54,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="pila.h" />
+		<Unit filename="usuario.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="usuario.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
