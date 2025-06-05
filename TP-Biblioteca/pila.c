@@ -18,7 +18,7 @@ PilaPtr crearPila(){
 
 };
 
-void insertarEnPila(PilaPtr pila, DatoPtr dato){
+void apilar(PilaPtr pila, DatoPtr dato){
 
     NodoPtr nuevoNodo = crearNodo(dato, pila->tope);
 
@@ -26,7 +26,7 @@ void insertarEnPila(PilaPtr pila, DatoPtr dato){
 
 };
 
-DatoPtr eliminarUltimo(PilaPtr pila){
+DatoPtr desapilar(PilaPtr pila){
 
     pila->tope = getSiguiente(pila->tope);
 
@@ -38,4 +38,7 @@ DatoPtr getUltimo(PilaPtr pila){
 
 };
 
-void liberarPila(PilaPtr pila);
+void liberarPila(PilaPtr pila){
+
+    free(pila);
+};

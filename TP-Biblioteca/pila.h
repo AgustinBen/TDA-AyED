@@ -7,9 +7,9 @@ typedef struct Pila * PilaPtr;
 
 PilaPtr crearPila();
 
-void insertarEnPila(PilaPtr pila, DatoPtr dato);
+void apilar(PilaPtr pila, DatoPtr dato);
 
-DatoPtr eliminarUltimo(PilaPtr pila);
+DatoPtr desapilar(PilaPtr pila);
 
 DatoPtr getUltimo(PilaPtr pila);
 

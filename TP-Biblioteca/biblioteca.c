@@ -8,6 +8,7 @@ struct Biblioteca{
     char nombre[30];
     PilaPtr pilaLibros;
     ColaPtr colaUsuarios;
+    ListaPtr estanteria;
 
 };
 
@@ -35,7 +36,7 @@ void insertarUsuario();
 
 void devolverLibro(BiPtr biblio, LibroPtr libro){
 
-    insertarEnPila(biblio->pilaLibros, libro);
+    apilar(biblio->pilaLibros, libro);
 
     printf("\n { Libro devuelto }\n");
     mostrarLibro(libro);
@@ -48,7 +49,7 @@ void reubicarLibro(BiPtr biblio){
     if(getUltimo(biblio->pilaLibros) == NULL){
         printf("pila de libros vacia!");
     }else{
-        eliminarUltimo(biblio->pilaLibros);
+        desapilar(biblio->pilaLibros);
     }
 
 };
