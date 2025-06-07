@@ -4,6 +4,7 @@
 #include "cola.h"
 #include "pila.h"
 #include "usuario.h"
+#include "lista.h"
 
 
 

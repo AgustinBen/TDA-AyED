@@ -21,6 +21,7 @@ BiPtr crearBiblioteca(char* nombre){
 
     biblio->pilaLibros = crearPila();
     biblio->colaUsuarios = crearCola();
+    biblio->estanteria = crearLista();
 
     return biblio;
 

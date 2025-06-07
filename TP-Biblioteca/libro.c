@@ -30,6 +30,13 @@ void mostrarLibro(LibroPtr libro){
 
 };
 
+void wrapperLibro(void * dato){
+
+    LibroPtr libro = dato;
+
+    mostrarLibro(libro);
+};
+
 void liberarLibro(LibroPtr libro){
 
     free(libro);

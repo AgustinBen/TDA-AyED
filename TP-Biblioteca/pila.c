@@ -28,7 +28,11 @@ void apilar(PilaPtr pila, DatoPtr dato){
 
 DatoPtr desapilar(PilaPtr pila){
 
-    pila->tope = getSiguiente(pila->tope);
+    NodoPtr nodo = pila->tope;
+    pila->tope = getSiguiente(nodo);
+    DatoPtr dato = getDato(nodo);
+    free(nodo);
+    return dato;
 
 };
 

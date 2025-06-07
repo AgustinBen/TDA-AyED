@@ -22,6 +22,8 @@ UsuarioPtr crearUsuario(char* nombre, int id){
 
 };
 
+
+
 void liberarUsuario(UsuarioPtr usuario){
 
     free(usuario);
