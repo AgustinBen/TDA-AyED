@@ -37,7 +37,18 @@ void insertarEnCola(ColaPtr cola, DatoPtr dato){
     }
 };
 
-DatoPtr eliminarPrimero(ColaPtr cola);
+DatoPtr eliminarPrimero(ColaPtr cola){
+    NodoPtr nodo = cola->primero;
+    DatoPtr dato = getDato(nodo);
+    cola->primero = getSiguiente(nodo);
+    if(cola->primero == NULL){
+
+        cola->ultimo = NULL;
+    }
+    free(nodo);
+    return dato;
+
+};
 
 DatoPtr getPrimero(ColaPtr cola);
 
