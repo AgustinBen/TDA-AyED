@@ -22,6 +22,12 @@ LibroPtr crearLibro(char* titulo, char* autor){
 
 };
 
+DatoPtr getTitulo(LibroPtr libro){
+
+    return libro->titulo;
+
+};
+
 void mostrarLibro(LibroPtr libro){
 
         //printf("\n -Libro- \n");
@@ -35,6 +41,7 @@ void wrapperLibro(void * dato){
     LibroPtr libro = dato;
 
     mostrarLibro(libro);
+
 };
 
 void liberarLibro(LibroPtr libro){

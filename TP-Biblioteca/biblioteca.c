@@ -50,9 +50,19 @@ void reubicarLibro(BiPtr biblio){
     if(getUltimo(biblio->pilaLibros) == NULL){
         printf("pila de libros vacia!");
     }else{
+//        LibroPtr libro = getUltimo(biblio->pilaLibros);
+        insertarPrimero(biblio->estanteria, getDato(getUltimo(biblio->pilaLibros)));
         desapilar(biblio->pilaLibros);
     }
-
 };
+
+void mostrarEstanteria(BiPtr biblio){
+
+    printf("\n-Estanteria-\n");
+
+    mostrarLista(biblio->estanteria, &wrapperLibro);
+
+}
+
 void registrarSolicitud();
 void procesarPrestamo(); //detalles de usuario

@@ -5,6 +5,7 @@
 #include "pila.h"
 #include "usuario.h"
 #include "lista.h"
+#include "libro.h"
 
 
 
@@ -20,6 +21,7 @@ void insertarUsuario();
 
 void devolverLibro(BiPtr biblio, LibroPtr libro); //detalles del libro devuelto
 void reubicarLibro(BiPtr biblio);
+void mostrarEstanteria(BiPtr biblio);
 void registrarSolicitud();
 void procesarPrestamo(); //detalles de usuario
 

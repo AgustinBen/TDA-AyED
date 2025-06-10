@@ -10,9 +10,9 @@ ColaPtr crearCola();
 
 void insertarUltimo(ColaPtr cola, DatoPtr dato);
 
-DatoPtr eliminarPrimero(ColaPtr cola);
+DatoPtr Desencolar(ColaPtr cola);
 
-DatoPtr getPrimero(ColaPtr cola);
+DatoPtr getPrimeroCola(ColaPtr cola);
 
 void liberarCola(ColaPtr cola);
 

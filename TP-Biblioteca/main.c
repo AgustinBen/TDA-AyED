@@ -30,8 +30,14 @@ int main()
     UsuarioPtr usuario3 = crearUsuario("Toribio", 3);
 
     devolverLibro(biblioteca, libro1);
+    devolverLibro(biblioteca, libro2);
+    devolverLibro(biblioteca, libro3);
 
     reubicarLibro(biblioteca);
+    reubicarLibro(biblioteca);
+    reubicarLibro(biblioteca);
+
+    mostrarEstanteria(biblioteca);
 
     return 0;
 }

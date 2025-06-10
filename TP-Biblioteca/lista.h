@@ -11,6 +11,12 @@ typedef struct Lista * ListaPtr;
 
 ListaPtr crearLista();
 
+NodoPtr getPrimero(ListaPtr lista);
+
+void insertarPrimero(ListaPtr lista, DatoPtr dato);
+
 void mostrarLista(ListaPtr lista, void (*wrapper)(void*));
 
 void liberarLista(ListaPtr lista);
+
+int obtenerTam(ListaPtr lista);
