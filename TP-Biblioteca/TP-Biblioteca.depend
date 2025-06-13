@@ -4,7 +4,7 @@
 	<stdlib.h>
 	"cola.h"
 
-1749694708 source:d:\ayed\tda-ayed\tp-biblioteca\main.c
+1749782520 source:d:\ayed\tda-ayed\tp-biblioteca\main.c
 	<stdio.h>
 	<stdlib.h>
 	"biblioteca.h"
@@ -23,19 +23,19 @@
 
 1748894286 d:\ayed\tda-ayed\tp-biblioteca\nodo.h
 
-1749562789 d:\ayed\tda-ayed\tp-biblioteca\cola.h
+1749782969 d:\ayed\tda-ayed\tp-biblioteca\cola.h
 	"nodo.h"
 
 1749152415 d:\ayed\tda-ayed\tp-biblioteca\pila.h
 	"nodo.h"
 
-1749777083 source:d:\ayed\tda-ayed\tp-biblioteca\biblioteca.c
+1749785799 source:d:\ayed\tda-ayed\tp-biblioteca\biblioteca.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"biblioteca.h"
 
-1749561028 d:\ayed\tda-ayed\tp-biblioteca\biblioteca.h
+1749783510 d:\ayed\tda-ayed\tp-biblioteca\biblioteca.h
 	"libro.h"
 	"cola.h"
 	"pila.h"
@@ -43,16 +43,16 @@
 	"lista.h"
 	"libro.h"
 
-1749777061 source:d:\ayed\tda-ayed\tp-biblioteca\libro.c
+1749780482 source:d:\ayed\tda-ayed\tp-biblioteca\libro.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"libro.h"
 
-1749777060 d:\ayed\tda-ayed\tp-biblioteca\libro.h
+1749780511 d:\ayed\tda-ayed\tp-biblioteca\libro.h
 	"nodo.h"
 
-1749155878 source:d:\ayed\tda-ayed\tp-biblioteca\usuario.c
+1749783510 source:d:\ayed\tda-ayed\tp-biblioteca\usuario.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -64,7 +64,7 @@
 	"nodo.h"
 	"libro.h"
 
-1749777103 source:d:\ayed\tda-ayed\tp-biblioteca\lista.c
+1749779545 source:d:\ayed\tda-ayed\tp-biblioteca\lista.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"

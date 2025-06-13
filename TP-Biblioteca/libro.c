@@ -5,16 +5,18 @@
 
 struct Libro{
 
+    int codigo;
     char titulo[45];
     char autor[25];
 
 };
 
 
-LibroPtr crearLibro(char* titulo, char* autor){
+LibroPtr crearLibro(char* titulo, char* autor,int codigo){
 
     LibroPtr libro = (LibroPtr)malloc(sizeof(struct Libro));
 
+    libro->codigo = codigo;
     strcpy(libro->titulo, titulo);
     strcpy(libro->autor, autor);
 

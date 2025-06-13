@@ -32,7 +32,7 @@ void insertarPrimero(ListaPtr lista, DatoPtr dato){
 
 
 void mostrarLista(ListaPtr lista, void (*wrapper)(void*)){
-    printf(" Tam: %d\n", obtenerTam(lista));
+    //printf(" Tam: %d\n\n", obtenerTam(lista));
     NodoPtr actual = lista->primero;
     if(actual == NULL){
         printf("  Vacia!\n");

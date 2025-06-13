@@ -6,6 +6,7 @@
 #include "usuario.h"
 #include "lista.h"
 #include "libro.h"
+#include "prestamo.h"
 
 
 
@@ -17,12 +18,12 @@ BiPtr crearBiblioteca(char* nombre);
 
 void mostrarBiblioteca(BiPtr biblio);
 
-void insertarUsuario();
-
+void insertarPrestamo(BiPtr biblio, PrestamoPtr prestamo);
 void devolverLibro(BiPtr biblio, LibroPtr libro); //detalles del libro devuelto
 void reubicarLibro(BiPtr biblio);
 void mostrarEstanteria(BiPtr biblio);
-void registrarSolicitud();
+void registrarSolicitud(BiPtr biblio, UsuarioPtr usuario);
+
 void procesarPrestamo(); //detalles de usuario
 
 

@@ -1,0 +1,13 @@
+#ifndef PRESTAMO_H_INCLUDED
+#define PRESTAMO_H_INCLUDED
+#include "libro.h"
+#include "usuario.h"
+
+struct Prestamo;
+
+typedef struct Prestamo * PrestamoPtr;
+
+PrestamoPtr crearPrestamo(UsuarioPtr usuario, LibroPtr libro);
+
+
+#endif // PRESTAMO_H_INCLUDED

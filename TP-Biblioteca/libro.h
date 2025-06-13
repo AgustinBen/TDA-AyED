@@ -6,7 +6,7 @@ struct Libro;
 
 typedef struct Libro * LibroPtr;
 
-LibroPtr crearLibro(char* titulo, char* autor);
+LibroPtr crearLibro(char* titulo, char* autor, int codigo);
 
 
 DatoPtr getTitulo(LibroPtr libro);

@@ -8,6 +8,7 @@ typedef struct Cola * ColaPtr;
 
 ColaPtr crearCola();
 
+void insertarEnCola(ColaPtr cola, DatoPtr dato);
 void insertarUltimo(ColaPtr cola, DatoPtr dato);
 
 DatoPtr Desencolar(ColaPtr cola);

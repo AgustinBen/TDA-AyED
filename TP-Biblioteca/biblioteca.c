@@ -9,6 +9,7 @@ struct Biblioteca{
     PilaPtr pilaLibros;
     ColaPtr colaUsuarios;
     ListaPtr estanteria;
+    ListaPtr prestamos;
 
 };
 
@@ -57,12 +58,18 @@ void reubicarLibro(BiPtr biblio){
 };
 
 void mostrarEstanteria(BiPtr biblio){
-
-    printf("\n-Estanteria-\n");
+    printf("------------------------------------------------------------------------------------------");
+    printf("\n-Estanteria-\n\n");
 
     mostrarLista(biblio->estanteria, &wrapperLibroLista);
+    printf("------------------------------------------------------------------------------------------");
 
 }
 
-void registrarSolicitud();
-void procesarPrestamo(); //detalles de usuario
+void registrarSolicitud(BiPtr biblio, UsuarioPtr usuario){
+
+    insertarEnCola(biblio->colaUsuarios, usuario);
+
+};
+
+void procesarPrestamo(BiPtr biblio, int codLibro); //detalles de usuario

@@ -18,12 +18,12 @@ int main()
 
     mostrarBiblioteca(biblioteca);
 
-    LibroPtr libro1 = crearLibro("Don Quijote de la Mancha", "Miguel de Cervantes");
-    LibroPtr libro2 = crearLibro("Harry Potter", "J.K. Rowling");
-    LibroPtr libro3 = crearLibro("La Metamorfosis", "Franz Kafka");
-    LibroPtr libro4 = crearLibro("Rayuela", "Julio Cortazar");
-    LibroPtr libro5 = crearLibro("Hamlet", "William Shakespeare");
-    LibroPtr libro6 = crearLibro("El libro de arena", "Jorge Luis Borges");
+    LibroPtr libro1 = crearLibro("Don Quijote de la Mancha", "Miguel de Cervantes", 100);
+    LibroPtr libro2 = crearLibro("Harry Potter", "J.K. Rowling", 101);
+    LibroPtr libro3 = crearLibro("La Metamorfosis", "Franz Kafka", 102);
+    LibroPtr libro4 = crearLibro("Rayuela", "Julio Cortazar", 103);
+    LibroPtr libro5 = crearLibro("Hamlet", "William Shakespeare", 104);
+    LibroPtr libro6 = crearLibro("El libro de arena", "Jorge Luis Borges", 105);
 
     UsuarioPtr usuario1 = crearUsuario("Agustin", 1);
     UsuarioPtr usuario2 = crearUsuario("Jorge", 2);
