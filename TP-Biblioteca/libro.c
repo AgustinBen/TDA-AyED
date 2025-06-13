@@ -36,11 +36,28 @@ void mostrarLibro(LibroPtr libro){
 
 };
 
+
 void wrapperLibro(void * dato){
 
     LibroPtr libro = dato;
 
     mostrarLibro(libro);
+
+};
+
+void mostrarLibroLista(LibroPtr libro){
+
+        //printf("\n -Libro- \n");
+        printf("{ %s }", libro->titulo);
+
+};
+
+
+void wrapperLibroLista(void * dato){
+
+    LibroPtr libro = dato;
+
+    mostrarLibroLista(libro);
 
 };
 

@@ -60,7 +60,7 @@ void mostrarEstanteria(BiPtr biblio){
 
     printf("\n-Estanteria-\n");
 
-    mostrarLista(biblio->estanteria, &wrapperLibro);
+    mostrarLista(biblio->estanteria, &wrapperLibroLista);
 
 }
 

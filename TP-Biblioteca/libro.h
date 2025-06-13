@@ -13,6 +13,8 @@ DatoPtr getTitulo(LibroPtr libro);
 
 void mostrarLibro(LibroPtr libro);
 void wrapperLibro(void * dato);
+void mostrarLibroLista(LibroPtr libro);
+void wrapperLibroLista(void * dato);
 
 void liberarLibro(LibroPtr libro);
 

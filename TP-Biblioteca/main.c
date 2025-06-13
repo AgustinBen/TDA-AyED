@@ -26,8 +26,8 @@ int main()
     LibroPtr libro6 = crearLibro("El libro de arena", "Jorge Luis Borges");
 
     UsuarioPtr usuario1 = crearUsuario("Agustin", 1);
-    UsuarioPtr usuario2 = crearUsuario("Dante", 2);
-    UsuarioPtr usuario3 = crearUsuario("Toribio", 3);
+    UsuarioPtr usuario2 = crearUsuario("Jorge", 2);
+    UsuarioPtr usuario3 = crearUsuario("Mauro", 3);
 
     devolverLibro(biblioteca, libro1);
     devolverLibro(biblioteca, libro2);
