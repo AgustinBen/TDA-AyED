@@ -18,13 +18,15 @@ BiPtr crearBiblioteca(char* nombre);
 
 void mostrarBiblioteca(BiPtr biblio);
 
-void insertarPrestamo(BiPtr biblio, PrestamoPtr prestamo);
+
 void devolverLibro(BiPtr biblio, LibroPtr libro); //detalles del libro devuelto
 void reubicarLibro(BiPtr biblio);
 void mostrarEstanteria(BiPtr biblio);
 void registrarSolicitud(BiPtr biblio, UsuarioPtr usuario);
 
-void procesarPrestamo(); //detalles de usuario
+void insertarPrestamo(BiPtr biblio, PrestamoPtr prestamo);
+void procesarPrestamo(BiPtr biblio, int codLibro); //detalles de usuario
+LibroPtr buscarLibro(BiPtr biblio, int codLibro,  int (*comparar)(void*, void*));
 
 
 #endif // BIBLIOTECA_H_INCLUDED

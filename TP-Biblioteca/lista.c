@@ -19,10 +19,17 @@ ListaPtr crearLista(){
 
 };
 
+void setPrimero(ListaPtr lista, NodoPtr nodo){
+
+    lista->primero = nodo;
+}
+
 NodoPtr getPrimero(ListaPtr lista){
 
     return lista->primero;
 };
+
+
 
 void insertarPrimero(ListaPtr lista, DatoPtr dato){
 

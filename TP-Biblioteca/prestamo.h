@@ -9,5 +9,7 @@ typedef struct Prestamo * PrestamoPtr;
 
 PrestamoPtr crearPrestamo(UsuarioPtr usuario, LibroPtr libro);
 
+void liberarPrestamo(PrestamoPtr prestamo);
+
 
 #endif // PRESTAMO_H_INCLUDED

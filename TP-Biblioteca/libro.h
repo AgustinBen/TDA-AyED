@@ -10,7 +10,7 @@ LibroPtr crearLibro(char* titulo, char* autor, int codigo);
 
 
 DatoPtr getTitulo(LibroPtr libro);
-
+int getCodigo(LibroPtr libro);
 void mostrarLibro(LibroPtr libro);
 void wrapperLibro(void * dato);
 void mostrarLibroLista(LibroPtr libro);

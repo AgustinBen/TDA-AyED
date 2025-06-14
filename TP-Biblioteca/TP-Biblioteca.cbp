@@ -58,6 +58,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="pila.h" />
+		<Unit filename="prestamo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="prestamo.h" />
 		<Unit filename="usuario.c">
 			<Option compilerVar="CC" />
 		</Unit>

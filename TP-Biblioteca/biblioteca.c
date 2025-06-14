@@ -34,7 +34,6 @@ void mostrarBiblioteca(BiPtr biblio){
 
 };
 
-void insertarUsuario();
 
 void devolverLibro(BiPtr biblio, LibroPtr libro){
 
@@ -72,4 +71,36 @@ void registrarSolicitud(BiPtr biblio, UsuarioPtr usuario){
 
 };
 
-void procesarPrestamo(BiPtr biblio, int codLibro); //detalles de usuario
+LibroPtr buscarLibro(BiPtr biblio, int codLibro, int (*comparar)(void*, void*)){
+
+    NodoPtr actual = getPrimero(biblio->estanteria);
+    NodoPtr anterior = NULL;
+
+    while(actual != NULL){
+
+        if(comparar(getDato(actual), &codLibro) == 0){
+            printf("Libro encontrado!\n");
+            LibroPtr libro = (LibroPtr) getDato(actual);
+            if(anterior == NULL){
+                setPrimero(biblio->estanteria, getSiguiente(actual));
+            }else{
+                setSiguiente(anterior, getSiguiente(actual));
+            }
+            free(actual);
+            return libro;
+        }
+        anterior = actual;
+        actual = getSiguiente(actual);
+
+    }
+    return NULL;
+
+};
+
+
+//void insertarPrestamo(BiPtr biblio, PrestamoPtr prestamo){
+//
+//    insertarPrimero(biblio->prestamos, prestamo);
+//
+//};
+//void procesarPrestamo(BiPtr biblio, int codLibro); //detalles de usuario

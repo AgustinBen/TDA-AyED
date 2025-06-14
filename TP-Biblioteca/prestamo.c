@@ -18,4 +18,10 @@ PrestamoPtr crearPrestamo(UsuarioPtr usuario, LibroPtr libro){
 
     return pres;
 
-}
+};
+
+void liberarPrestamo(PrestamoPtr prestamo){
+
+    free(prestamo);
+
+};

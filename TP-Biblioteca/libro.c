@@ -24,6 +24,12 @@ LibroPtr crearLibro(char* titulo, char* autor,int codigo){
 
 };
 
+int getCodigo(LibroPtr libro){
+
+    return libro->codigo;
+
+}
+
 DatoPtr getTitulo(LibroPtr libro){
 
     return libro->titulo;
@@ -66,5 +72,15 @@ void wrapperLibroLista(void * dato){
 void liberarLibro(LibroPtr libro){
 
     free(libro);
+
+};
+
+int compararLibro(void* libro, void* codigo){
+
+    LibroPtr n1 = libro;
+
+    int* n2 = codigo;
+
+    return (getCodigo(n1) - *n2);
 
 };
