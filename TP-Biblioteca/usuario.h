@@ -6,6 +6,7 @@ struct Usuario;
 typedef struct Usuario * UsuarioPtr;
 
 UsuarioPtr crearUsuario(char* nombre, int id);
+void setCodigoLibro(UsuarioPtr usuario, int codigo);
 
 void liberarUsuario(UsuarioPtr usuario);
 

@@ -9,7 +9,7 @@ struct Biblioteca{
     PilaPtr pilaLibros;
     ColaPtr colaUsuarios;
     ListaPtr estanteria;
-    ListaPtr prestamos;
+//    ListaPtr prestamos;
 
 };
 
@@ -30,10 +30,14 @@ BiPtr crearBiblioteca(char* nombre){
 
 void mostrarBiblioteca(BiPtr biblio){
 
-    printf("\n-- Biblioteca %s --\n", biblio->nombre);
+    printf("\n-- Biblioteca %s --\n\n", biblio->nombre);
 
 };
 
+ListaPtr getEstanteria(BiPtr biblio){
+
+    return biblio->estanteria;
+};
 
 void devolverLibro(BiPtr biblio, LibroPtr libro){
 
@@ -56,6 +60,7 @@ void reubicarLibro(BiPtr biblio){
     }
 };
 
+
 void mostrarEstanteria(BiPtr biblio){
     printf("------------------------------------------------------------------------------------------");
     printf("\n-Estanteria-\n\n");
@@ -63,10 +68,10 @@ void mostrarEstanteria(BiPtr biblio){
     mostrarLista(biblio->estanteria, &wrapperLibroLista);
     printf("------------------------------------------------------------------------------------------");
 
-}
+};
 
-void registrarSolicitud(BiPtr biblio, UsuarioPtr usuario){
-
+void registrarSolicitud(BiPtr biblio, UsuarioPtr usuario, int codLibro){
+    setCodigoLibro(usuario, codLibro);
     insertarEnCola(biblio->colaUsuarios, usuario);
 
 };
@@ -98,9 +103,4 @@ LibroPtr buscarLibro(BiPtr biblio, int codLibro, int (*comparar)(void*, void*)){
 };
 
 
-//void insertarPrestamo(BiPtr biblio, PrestamoPtr prestamo){
-//
-//    insertarPrimero(biblio->prestamos, prestamo);
-//
-//};
 //void procesarPrestamo(BiPtr biblio, int codLibro); //detalles de usuario

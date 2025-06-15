@@ -15,7 +15,7 @@ void mostrarLibro(LibroPtr libro);
 void wrapperLibro(void * dato);
 void mostrarLibroLista(LibroPtr libro);
 void wrapperLibroLista(void * dato);
-
+int comparar(void* dato1, void* dato2);
 void liberarLibro(LibroPtr libro);
 
 #endif // LIBRO_H_INCLUDED

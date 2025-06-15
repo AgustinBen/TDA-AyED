@@ -61,7 +61,7 @@ void mostrarLibroLista(LibroPtr libro){
 };
 
 
-void wrapperLibroLista(void * dato){
+void wrapperLibroLista(void* dato){
 
     LibroPtr libro = dato;
 
@@ -83,4 +83,15 @@ int compararLibro(void* libro, void* codigo){
 
     return (getCodigo(n1) - *n2);
 
+};
+
+int comparar(void* dato1, void* dato2){
+
+    LibroPtr libro1 = (LibroPtr)dato1;
+    LibroPtr libro2 = (LibroPtr)dato2;
+
+    int codigo1 = getCodigo(libro1);
+    int codigo2 = getCodigo(libro2);
+
+    return (codigo1 - codigo2);
 };
