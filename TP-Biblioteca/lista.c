@@ -79,25 +79,6 @@ int obtenerTam(ListaPtr lista){
     return tam;
 };
 
-//void insertarEnOrden(ListaPtr lista, DatoPtr dato, int(*comparar)(void*, void*)){
-//
-//    NodoPtr actual = getPrimero(lista);
-//
-//    if(actual == NULL || (comparar(dato, getDato(actual)) < 0)){
-//
-//        insertarPrimero(lista, dato);
-//        return;
-//    }
-//    NodoPtr anterior = NULL;
-//    while(comparar(dato, getDato(actual)) > 0){
-//
-//        anterior = actual;
-//        actual = getSiguiente(actual);
-//    };
-//    NodoPtr nodo = crearNodo(dato, actual);
-//    setSiguiente(anterior, nodo);
-//
-//};
 
 void insertarEnOrden(ListaPtr lista, DatoPtr dato, int (*comparar)(void*, void*)) {
     NodoPtr actual = getPrimero(lista);

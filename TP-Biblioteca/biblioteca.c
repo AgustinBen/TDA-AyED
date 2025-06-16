@@ -52,16 +52,6 @@ ListaPtr getEstanteria(BiPtr biblio){
     return biblio->estanteria;
 };
 
-//void devolverLibro(BiPtr biblio){
-//
-//    LibroPtr libro = getLibro(getPrestamo(biblio));
-//
-//    apilar(biblio->pilaLibros, libro);
-//
-//    printf("\n { Libro devuelto }\n");
-//    mostrarLibro(libro);
-//
-//}; //detalles del libro devuelto
 
 void devolverLibro(BiPtr biblio, UsuarioPtr usu){
 
@@ -76,7 +66,7 @@ void devolverLibro(BiPtr biblio, UsuarioPtr usu){
 
         if(getCodigo(libro) == codigo){
             apilar(biblio->pilaLibros, libro);
-            printf("-Libro devuelto- ");
+            printf("-Libro devuelto- \n");
             mostrarLibro(libro);
             mostrarUsuario(usu);
             printf("\n");
@@ -90,7 +80,7 @@ void devolverLibro(BiPtr biblio, UsuarioPtr usu){
 void reubicarLibro(BiPtr biblio){
 
     if(getUltimo(biblio->pilaLibros) == NULL){
-        printf("pila de libros vacia!");
+        printf(" Pila de libros vacia!\n");
 
     }else{
         LibroPtr libro = getDato(getUltimo(biblio->pilaLibros));
@@ -101,11 +91,11 @@ void reubicarLibro(BiPtr biblio){
 
 
 void mostrarEstanteria(BiPtr biblio){
-    printf("------------------------------------------------------------------------------------------");
+    printf("-----------------------------------------------------------------------------------------------");
     printf("\n-Estanteria-\n\n");
 
     mostrarLista(biblio->estanteria, &wrapperLibroLista);
-    printf("------------------------------------------------------------------------------------------\n");
+    printf("----------------------------------------------------------------------------------------------\n");
 
 };
 
@@ -161,7 +151,7 @@ void procesarPrestamo(BiPtr biblio){
         LibroPtr libro = buscarLibro(biblio, codActual, &compararLibro);
 
         if(libro == NULL){
-            printf("\n  libro %d no encontrado!\n", codActual);
+            printf("\n  libro %d no disponible!\n", codActual);
             insertarEnCola(biblio->colaUsuarios, usu);
         }else{
                 printf("\n-Prestamo procesado-\n");
