@@ -25,19 +25,12 @@ int main()
     LibroPtr libro5 = crearLibro("Hamlet", "William Shakespeare", 104);
     LibroPtr libro6 = crearLibro("El libro de arena", "Jorge Luis Borges", 105);
 
-//    insertarPrimero(getEstanteria(biblioteca), libro1);
-//    insertarPrimero(getEstanteria(biblioteca), libro2);
-//    insertarPrimero(getEstanteria(biblioteca), libro3);
-//    insertarPrimero(getEstanteria(biblioteca), libro4);
-//    insertarPrimero(getEstanteria(biblioteca), libro5);
-//    insertarPrimero(getEstanteria(biblioteca), libro6);
-
-    //104 - 100 - 102 -
     insertarEnOrden(getEstanteria(biblioteca), libro6, comparar);
     insertarEnOrden(getEstanteria(biblioteca), libro3, comparar);
     insertarEnOrden(getEstanteria(biblioteca), libro1, comparar);
     insertarEnOrden(getEstanteria(biblioteca), libro2, comparar);
     insertarEnOrden(getEstanteria(biblioteca), libro5, comparar);
+    insertarEnOrden(getEstanteria(biblioteca), libro4, comparar);
 
     //Abrimos biblioteca
     mostrarEstanteria(biblioteca);
@@ -45,20 +38,33 @@ int main()
     UsuarioPtr usuario1 = crearUsuario("Agustin", 1);
     UsuarioPtr usuario2 = crearUsuario("Jorge", 2);
     UsuarioPtr usuario3 = crearUsuario("Mauro", 3);
+    UsuarioPtr usuario4 = crearUsuario("Noemi", 4);
+    UsuarioPtr usuario5 = crearUsuario("Noelia", 5);
 
-    registrarSolicitud(biblioteca, usuario1, 101);
-    registrarSolicitud(biblioteca, usuario2, 104);
-    registrarSolicitud(biblioteca, usuario3, 100);
-//
-//    devolverLibro(biblioteca, libro1);
-//    devolverLibro(biblioteca, libro2);
+    registrarSolicitud(biblioteca, usuario1, 104);
+    registrarSolicitud(biblioteca, usuario2, 102);
+    registrarSolicitud(biblioteca, usuario3, 105);
+//    registrarSolicitud(biblioteca, usuario4, 103);
+//    registrarSolicitud(biblioteca, usuario5, 103);
+
+    procesarPrestamo(biblioteca);
+    procesarPrestamo(biblioteca);
+    procesarPrestamo(biblioteca);
+//    procesarPrestamo(biblioteca);
+//    procesarPrestamo(biblioteca);
+
+    mostrarEstanteria(biblioteca);
+
+    devolverLibro(biblioteca);
+    devolverLibro(biblioteca);
+    devolverLibro(biblioteca);
 //    devolverLibro(biblioteca, libro3);
 //
-//    reubicarLibro(biblioteca);
-//    reubicarLibro(biblioteca);
-//    reubicarLibro(biblioteca);
+    reubicarLibro(biblioteca);
+    reubicarLibro(biblioteca);
+    reubicarLibro(biblioteca);
 //
-//    mostrarEstanteria(biblioteca);
+    mostrarEstanteria(biblioteca);
 
     return 0;
 }

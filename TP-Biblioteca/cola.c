@@ -37,19 +37,38 @@ void insertarEnCola(ColaPtr cola, DatoPtr dato){
     }
 };
 
-DatoPtr Desencolar(ColaPtr cola){
-    NodoPtr nodo = cola->primero;
-    DatoPtr dato = getDato(nodo);
-    cola->primero = getSiguiente(nodo);
-    if(cola->primero == NULL){
+//DatoPtr desencolar(ColaPtr cola){
+//    NodoPtr nodo = cola->primero;
+//    DatoPtr dato = getDato(nodo);
+//    cola->primero = getSiguiente(nodo);
+//
+//    if(cola->primero == NULL){
+//
+//        cola->ultimo = NULL;
+//    }
+//    free(nodo);
+//    return dato;
+//
+//
+//};
 
-        cola->ultimo = NULL;
-    }
-    free(nodo);
+DatoPtr desencolar(ColaPtr cola){
+    NodoPtr nodoADesencolar = cola->primero;
+    if(nodoADesencolar!=NULL){
+        DatoPtr dato = getDato(nodoADesencolar);
+        cola->primero = getSiguiente(nodoADesencolar);
+        if(cola->primero == NULL){
+            cola->ultimo = NULL;
+        }
+    free(nodoADesencolar);
     return dato;
-
+    }
+    return NULL;
 };
 
-DatoPtr getPrimeroCola(ColaPtr cola);
+DatoPtr getPrimeroCola(ColaPtr cola){
+
+    return cola->primero;
+};
 
 void liberarCola(ColaPtr cola);

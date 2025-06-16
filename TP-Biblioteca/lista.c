@@ -27,6 +27,7 @@ void setPrimero(ListaPtr lista, NodoPtr nodo){
 NodoPtr getPrimero(ListaPtr lista){
 
     return lista->primero;
+
 };
 
 

@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1749562789 source:d:\ayed\tda-ayed\tp-biblioteca\cola.c
+1750044394 source:d:\ayed\tda-ayed\tp-biblioteca\cola.c
 	<stdio.h>
 	<stdlib.h>
 	"cola.h"
 
-1749962004 source:d:\ayed\tda-ayed\tp-biblioteca\main.c
+1750047379 source:d:\ayed\tda-ayed\tp-biblioteca\main.c
 	<stdio.h>
 	<stdlib.h>
 	"biblioteca.h"
@@ -23,19 +23,19 @@
 
 1748894286 d:\ayed\tda-ayed\tp-biblioteca\nodo.h
 
-1749782969 d:\ayed\tda-ayed\tp-biblioteca\cola.h
+1750044407 d:\ayed\tda-ayed\tp-biblioteca\cola.h
 	"nodo.h"
 
 1749152415 d:\ayed\tda-ayed\tp-biblioteca\pila.h
 	"nodo.h"
 
-1749960247 source:d:\ayed\tda-ayed\tp-biblioteca\biblioteca.c
+1750047514 source:d:\ayed\tda-ayed\tp-biblioteca\biblioteca.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"biblioteca.h"
 
-1749950894 d:\ayed\tda-ayed\tp-biblioteca\biblioteca.h
+1750046747 d:\ayed\tda-ayed\tp-biblioteca\biblioteca.h
 	"libro.h"
 	"cola.h"
 	"pila.h"
@@ -44,37 +44,37 @@
 	"libro.h"
 	"prestamo.h"
 
-1749961185 source:d:\ayed\tda-ayed\tp-biblioteca\libro.c
+1750040620 source:d:\ayed\tda-ayed\tp-biblioteca\libro.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"libro.h"
 
-1749954224 d:\ayed\tda-ayed\tp-biblioteca\libro.h
+1750037620 d:\ayed\tda-ayed\tp-biblioteca\libro.h
 	"nodo.h"
 
-1749948953 source:d:\ayed\tda-ayed\tp-biblioteca\usuario.c
+1750042368 source:d:\ayed\tda-ayed\tp-biblioteca\usuario.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"usuario.h"
 
-1749948896 d:\ayed\tda-ayed\tp-biblioteca\usuario.h
+1750040754 d:\ayed\tda-ayed\tp-biblioteca\usuario.h
 
 1749953310 d:\ayed\tda-ayed\tp-biblioteca\lista.h
 	"nodo.h"
 	"libro.h"
 
-1749961971 source:d:\ayed\tda-ayed\tp-biblioteca\lista.c
+1750046812 source:d:\ayed\tda-ayed\tp-biblioteca\lista.c
 	<stdio.h>
 	<stdlib.h>
 	"lista.h"
 
-1749909478 d:\ayed\tda-ayed\tp-biblioteca\prestamo.h
+1750046602 d:\ayed\tda-ayed\tp-biblioteca\prestamo.h
 	"libro.h"
 	"usuario.h"
 
-1749909474 source:d:\ayed\tda-ayed\tp-biblioteca\prestamo.c
+1750046640 source:d:\ayed\tda-ayed\tp-biblioteca\prestamo.c
 	<stdio.h>
 	<stdlib.h>
 	"prestamo.h"

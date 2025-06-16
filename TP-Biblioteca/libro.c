@@ -44,6 +44,14 @@ void mostrarLibro(LibroPtr libro){
 
 };
 
+void mostrarLibroLista(LibroPtr libro){
+
+        //printf("\n -Libro- \n");
+        printf("{ %s }", libro->titulo);
+
+};
+
+
 
 void wrapperLibro(void * dato){
 
@@ -53,12 +61,6 @@ void wrapperLibro(void * dato){
 
 };
 
-void mostrarLibroLista(LibroPtr libro){
-
-        //printf("\n -Libro- \n");
-        printf("{ %s }", libro->titulo);
-
-};
 
 
 void wrapperLibroLista(void* dato){

@@ -9,7 +9,7 @@ struct Biblioteca{
     PilaPtr pilaLibros;
     ColaPtr colaUsuarios;
     ListaPtr estanteria;
-//    ListaPtr prestamos;
+    ListaPtr prestamos;
 
 };
 
@@ -23,10 +23,23 @@ BiPtr crearBiblioteca(char* nombre){
     biblio->pilaLibros = crearPila();
     biblio->colaUsuarios = crearCola();
     biblio->estanteria = crearLista();
+    biblio->prestamos = crearLista();
 
     return biblio;
 
 };
+
+PrestamoPtr getPrestamo(BiPtr biblio){
+
+    NodoPtr actual = getPrimero(biblio->prestamos);
+
+    PrestamoPtr prestamo = getDato(actual);
+
+    setPrimero(biblio->prestamos, getSiguiente(actual));
+
+    return prestamo;
+
+}
 
 void mostrarBiblioteca(BiPtr biblio){
 
@@ -39,7 +52,9 @@ ListaPtr getEstanteria(BiPtr biblio){
     return biblio->estanteria;
 };
 
-void devolverLibro(BiPtr biblio, LibroPtr libro){
+void devolverLibro(BiPtr biblio){
+
+    LibroPtr libro = getLibro(getPrestamo(biblio));
 
     apilar(biblio->pilaLibros, libro);
 
@@ -66,7 +81,7 @@ void mostrarEstanteria(BiPtr biblio){
     printf("\n-Estanteria-\n\n");
 
     mostrarLista(biblio->estanteria, &wrapperLibroLista);
-    printf("------------------------------------------------------------------------------------------");
+    printf("------------------------------------------------------------------------------------------\n");
 
 };
 
@@ -84,7 +99,6 @@ LibroPtr buscarLibro(BiPtr biblio, int codLibro, int (*comparar)(void*, void*)){
     while(actual != NULL){
 
         if(comparar(getDato(actual), &codLibro) == 0){
-            printf("Libro encontrado!\n");
             LibroPtr libro = (LibroPtr) getDato(actual);
             if(anterior == NULL){
                 setPrimero(biblio->estanteria, getSiguiente(actual));
@@ -102,5 +116,35 @@ LibroPtr buscarLibro(BiPtr biblio, int codLibro, int (*comparar)(void*, void*)){
 
 };
 
+void insertarPrestamo(BiPtr biblio,PrestamoPtr nuevoPrestamo){
 
-//void procesarPrestamo(BiPtr biblio, int codLibro); //detalles de usuario
+    insertarPrimero(biblio->prestamos, nuevoPrestamo);
+
+};
+
+void procesarPrestamo(BiPtr biblio){
+
+        UsuarioPtr usu = desencolar(biblio->colaUsuarios);
+
+        if(usu == NULL){
+
+            printf("\n No hay usuarios! \n");
+            return;
+        }
+
+        int codActual = getCodigoLibro(usu);
+
+        LibroPtr libro = buscarLibro(biblio, codActual, &compararLibro);
+
+        if(libro == NULL){
+            printf("\n  libro %d no encontrado!\n", codActual);
+            insertarEnCola(biblio->colaUsuarios, usu);
+        }else{
+                printf("\n-Prestamo procesado-\n");
+                mostrarLibro(libro);
+                mostrarUsuario(usu);
+
+                PrestamoPtr nuevoPrestamo = crearPrestamo(usu, libro);
+                insertarPrestamo(biblio, nuevoPrestamo);
+            }
+}; //detalles de usuario

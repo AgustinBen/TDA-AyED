@@ -20,6 +20,11 @@ PrestamoPtr crearPrestamo(UsuarioPtr usuario, LibroPtr libro){
 
 };
 
+LibroPtr getLibro(PrestamoPtr prestamo){
+
+    return prestamo->libro;
+};
+
 void liberarPrestamo(PrestamoPtr prestamo){
 
     free(prestamo);

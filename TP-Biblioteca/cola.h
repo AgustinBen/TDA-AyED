@@ -11,7 +11,7 @@ ColaPtr crearCola();
 void insertarEnCola(ColaPtr cola, DatoPtr dato);
 void insertarUltimo(ColaPtr cola, DatoPtr dato);
 
-DatoPtr Desencolar(ColaPtr cola);
+DatoPtr desencolar(ColaPtr cola);
 
 DatoPtr getPrimeroCola(ColaPtr cola);
 
