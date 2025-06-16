@@ -20,7 +20,7 @@ void mostrarBiblioteca(BiPtr biblio);
 
 
 ListaPtr getEstanteria(BiPtr biblio);
-void devolverLibro(BiPtr biblio); //detalles del libro devuelto
+void devolverLibro(BiPtr biblio, UsuarioPtr usu); //detalles del libro devuelto
 void reubicarLibro(BiPtr biblio);
 void mostrarEstanteria(BiPtr biblio);
 void registrarSolicitud(BiPtr biblio, UsuarioPtr usuario, int codLibro);

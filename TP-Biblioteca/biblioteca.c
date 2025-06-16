@@ -52,25 +52,49 @@ ListaPtr getEstanteria(BiPtr biblio){
     return biblio->estanteria;
 };
 
-void devolverLibro(BiPtr biblio){
+//void devolverLibro(BiPtr biblio){
+//
+//    LibroPtr libro = getLibro(getPrestamo(biblio));
+//
+//    apilar(biblio->pilaLibros, libro);
+//
+//    printf("\n { Libro devuelto }\n");
+//    mostrarLibro(libro);
+//
+//}; //detalles del libro devuelto
 
-    LibroPtr libro = getLibro(getPrestamo(biblio));
+void devolverLibro(BiPtr biblio, UsuarioPtr usu){
 
-    apilar(biblio->pilaLibros, libro);
+    int codigo = getCodigoLibro(usu);
+    NodoPtr actual = getPrimero(biblio->prestamos);
+    NodoPtr anterior = NULL;
 
-    printf("\n { Libro devuelto }\n");
-    mostrarLibro(libro);
+    while(actual != NULL){
 
-}; //detalles del libro devuelto
+        PrestamoPtr presActual = getDato(actual);
+        LibroPtr libro = getLibro(presActual);
+
+        if(getCodigo(libro) == codigo){
+            apilar(biblio->pilaLibros, libro);
+            printf("-Libro devuelto- ");
+            mostrarLibro(libro);
+            mostrarUsuario(usu);
+            printf("\n");
+           }
+        anterior = actual;
+        actual = getSiguiente(actual);
+    }
+};
 
 
 void reubicarLibro(BiPtr biblio){
 
     if(getUltimo(biblio->pilaLibros) == NULL){
         printf("pila de libros vacia!");
+
     }else{
-//        LibroPtr libro = getUltimo(biblio->pilaLibros);
-        insertarPrimero(biblio->estanteria, getDato(getUltimo(biblio->pilaLibros)));
+        LibroPtr libro = getDato(getUltimo(biblio->pilaLibros));
+        insertarEnOrden(getEstanteria(biblio), libro, comparar);
         desapilar(biblio->pilaLibros);
     }
 };

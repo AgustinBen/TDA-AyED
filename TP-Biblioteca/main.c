@@ -43,27 +43,27 @@ int main()
 
     registrarSolicitud(biblioteca, usuario1, 104);
     registrarSolicitud(biblioteca, usuario2, 102);
-    registrarSolicitud(biblioteca, usuario3, 105);
+//    registrarSolicitud(biblioteca, usuario3, 105);
 //    registrarSolicitud(biblioteca, usuario4, 103);
 //    registrarSolicitud(biblioteca, usuario5, 103);
-
-    procesarPrestamo(biblioteca);
+////
     procesarPrestamo(biblioteca);
     procesarPrestamo(biblioteca);
 //    procesarPrestamo(biblioteca);
-//    procesarPrestamo(biblioteca);
-
+////    procesarPrestamo(biblioteca);
+////    procesarPrestamo(biblioteca);
+//
     mostrarEstanteria(biblioteca);
+//
+    devolverLibro(biblioteca, usuario2);
+    devolverLibro(biblioteca, usuario1);
+//    devolverLibro(biblioteca);
+////    devolverLibro(biblioteca, libro3);
+//////
+    reubicarLibro(biblioteca);
+//    reubicarLibro(biblioteca);
+//    reubicarLibro(biblioteca);
 
-    devolverLibro(biblioteca);
-    devolverLibro(biblioteca);
-    devolverLibro(biblioteca);
-//    devolverLibro(biblioteca, libro3);
-//
-    reubicarLibro(biblioteca);
-    reubicarLibro(biblioteca);
-    reubicarLibro(biblioteca);
-//
     mostrarEstanteria(biblioteca);
 
     return 0;
