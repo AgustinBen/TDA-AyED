@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1750987957 source:d:\ayed\tda-ayed\practica-arboles\arbol.c
+	<stdio.h>
+	<stdlib.h>
+	"arbol.h"
+
+1740933562 source:d:\ayed\tda-ayed\practica-arboles\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1750989362 d:\ayed\tda-ayed\practica-arboles\nodo.h
+
+1750987954 d:\ayed\tda-ayed\practica-arboles\arbol.h
+	"nodo.h"
+
+1750987912 source:d:\ayed\tda-ayed\practica-arboles\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
