@@ -10,32 +10,13 @@ struct Nodo{
 
 };
 
-NodoPtr crearNodo(DatoPtr dato, NodoPtr izquierda, NodoPtr derecha){
+NodoPtr crearNodo(DatoPtr dato){
 
     NodoPtr nodo = (NodoPtr)malloc(sizeof(struct Nodo));
 
     nodo->dato = dato;
-    nodo->izq = izquierda;
-    nodo->der = derecha;
+    nodo->izq = NULL;
+    nodo->der = NULL;
 
 };
 
-void setDato(NodoPtr nodo, DatoPtr nuevoDato){
-
-    nodo->dato = nuevoDato;
-
-};
-
-DatoPtr getDato (NodoPtr nodo){
-
-    return nodo->dato;
-
-};
-void setIzquierda(NodoPtr nodo, NodoPtr nodoIzq){
-
-    nodo->izq = nodoIzq;
-
-};
-NodoPtr getDerecha(NodoPtr nodo);
-void setDerecha(NodoPtr nodo, NodoPtr nodoDer);
-NodoPtr getIzquierda(NodoPtr nodo);

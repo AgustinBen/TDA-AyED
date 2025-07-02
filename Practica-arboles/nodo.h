@@ -6,14 +6,12 @@ struct Nodo;
 typedef struct Nodo * NodoPtr;
 typedef void * DatoPtr;
 
-NodoPtr crearNodo(DatoPtr dato, NodoPtr izquierda, NodoPtr derecha);
+NodoPtr crearNodo(DatoPtr dato);
 
-void setDato(NodoPtr nodo, DatoPtr nuevoDato);
-void setDerecha(NodoPtr nodo, NodoPtr nodoDer);
-DatoPtr getDato (NodoPtr nodo);
-void setIzquierda(NodoPtr nodo, NodoPtr nodoIzq);
-NodoPtr getDerecha(NodoPtr nodo);
-NodoPtr getIzquierda(NodoPtr nodo);
-
+void insertar(NodoPtr nodo,DatoPtr dato);
+void preOrden(NodoPtr nodo);
+void inOrden(NodoPtr nodo);
+void postOrden(NodoPtr nodo);
+NodoPtr buscar(NodoPtr nodo, DatoPtr dato);
 
 #endif // NODO_H_INCLUDED
