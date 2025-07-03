@@ -20,3 +20,24 @@ NodoPtr crearNodo(DatoPtr dato){
 
 };
 
+void insertar(NodoPtr nodo,DatoPtr dato){
+
+    if(dato > nodo->dato){
+
+        if(nodo->der == NULL){
+            nodo->der = crearNodo(dato);
+        }
+        else{
+            insertar(nodo->der, dato);
+        }
+    }
+    else{
+
+        if(nodo->izq == NULL){
+            nodo->izq = crearNodo(dato);
+        }
+        else{
+            insertar(nodo->izq, dato);
+        }
+    }
+};
