@@ -1,9 +1,16 @@
-#ifndef ARBOL_H_INCLUDED
-#define ARBOL_H_INCLUDED
-#include "nodo.h"
+#ifndef NODO_H_INCLUDED
+#define NODO_H_INCLUDED
 
-struct Arbol;
+struct Nodo;
 
-typedef struct Arbol * ArbolPtr;
+typedef struct Nodo * NodoPtr;
 
-#endif // ARBOL_H_INCLUDED
+NodoPtr crearNodo(int dato);
+
+void insertar(NodoPtr nodo,int dato);
+void preOrden(NodoPtr nodo);
+void inOrden(NodoPtr nodo);
+void postOrden(NodoPtr nodo);
+NodoPtr buscar(NodoPtr nodo,int dato);
+
+#endif // NODO_H_INCLUDED

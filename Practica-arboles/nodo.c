@@ -7,6 +7,7 @@ struct Nodo{
     DatoPtr dato;
     NodoPtr izq;
     NodoPtr der;
+    int peso;
 
 };
 
@@ -17,12 +18,16 @@ NodoPtr crearNodo(DatoPtr dato){
     nodo->dato = dato;
     nodo->izq = NULL;
     nodo->der = NULL;
+    nodo->peso = 1;
 
 };
 
 void insertar(NodoPtr nodo,DatoPtr dato){
 
-    if(dato > nodo->dato){
+    if(dato == nodo->dato){
+        nodo->peso++;
+    }
+    else if(dato > nodo->dato){
 
         if(nodo->der == NULL){
             nodo->der = crearNodo(dato);
