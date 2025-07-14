@@ -47,11 +47,29 @@ void insertar(NodoPtr nodo,int dato){
     }
 };
 
-void preOrden(NodoPtr nodo){
+void preOrder(NodoPtr nodo){
     if(nodo != NULL){
         printf("{%d}", nodo->dato);
-        preOrden(nodo->izq);
-        preOrden(nodo->der);
+        preOrder(nodo->izq);
+        preOrder(nodo->der);
     }
 
 };
+
+void inOrder(NodoPtr nodo){
+    if(nodo != NULL){
+        inOrder(nodo->izq);
+        printf("{%d}", nodo->dato);
+        inOrder(nodo->der);
+    }
+}
+
+void postOrder(NodoPtr nodo){
+
+    if(nodo != NULL){
+        postOrder(nodo->izq);
+        postOrder(nodo->der);
+        printf("{%d}", nodo->dato);
+
+    }
+}

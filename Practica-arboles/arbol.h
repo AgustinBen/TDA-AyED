@@ -8,9 +8,9 @@ typedef struct Nodo * NodoPtr;
 NodoPtr crearNodo(int dato);
 
 void insertar(NodoPtr nodo,int dato);
-void preOrden(NodoPtr nodo);
-void inOrden(NodoPtr nodo);
-void postOrden(NodoPtr nodo);
+void preOrder(NodoPtr nodo);
+void inOrder(NodoPtr nodo);
+void postOrder(NodoPtr nodo);
 NodoPtr buscar(NodoPtr nodo,int dato);
 
 #endif // NODO_H_INCLUDED

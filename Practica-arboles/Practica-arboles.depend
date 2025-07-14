@@ -1,17 +1,17 @@
 # depslib dependency file v1.0
-1751556800 source:d:\ayed\tda-ayed\practica-arboles\arbol.c
+1752521191 source:d:\ayed\tda-ayed\practica-arboles\arbol.c
 	<stdio.h>
 	<stdlib.h>
 	"arbol.h"
 
-1751556853 source:d:\ayed\tda-ayed\practica-arboles\main.c
+1752520701 source:d:\ayed\tda-ayed\practica-arboles\main.c
 	<stdio.h>
 	<stdlib.h>
 	"arbol.h"
 
 1751419561 d:\ayed\tda-ayed\practica-arboles\nodo.h
 
-1751556650 d:\ayed\tda-ayed\practica-arboles\arbol.h
+1752520714 d:\ayed\tda-ayed\practica-arboles\arbol.h
 
 1751510851 source:d:\ayed\tda-ayed\practica-arboles\nodo.c
 	<stdio.h>
