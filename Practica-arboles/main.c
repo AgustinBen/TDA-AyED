@@ -21,5 +21,8 @@ int main()
     inOrder(raiz);
     printf("\n\nMostrando postOrder \n");
     postOrder(raiz);
+    printf("\n\n");
+    buscar(raiz, 3);
+
     return 0;
 }

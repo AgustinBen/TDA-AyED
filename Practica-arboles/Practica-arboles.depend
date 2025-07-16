@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1752521191 source:d:\ayed\tda-ayed\practica-arboles\arbol.c
+1752671598 source:d:\ayed\tda-ayed\practica-arboles\arbol.c
 	<stdio.h>
 	<stdlib.h>
 	"arbol.h"
 
-1752520701 source:d:\ayed\tda-ayed\practica-arboles\main.c
+1752671539 source:d:\ayed\tda-ayed\practica-arboles\main.c
 	<stdio.h>
 	<stdlib.h>
 	"arbol.h"

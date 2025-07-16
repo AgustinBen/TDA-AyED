@@ -73,3 +73,24 @@ void postOrder(NodoPtr nodo){
 
     }
 }
+
+NodoPtr buscar(NodoPtr nodo, int dato){
+
+    if(nodo == NULL){
+        return NULL;
+    }
+    if(dato == nodo->dato){
+        printf("\nNodo encontrado!");
+        return nodo;
+    }
+    else if(dato > nodo->dato){
+        printf("\n%d es mayor que %d --> DERECHA", dato, nodo->dato);
+        return buscar(nodo->der, dato);
+    }
+    else{
+        printf("\n%d es menor que %d -->IZQUIERDA", dato, nodo->dato);
+        return buscar(nodo->izq, dato);
+    }
+
+}
+
