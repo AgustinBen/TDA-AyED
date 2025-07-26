@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1753496076 source:d:\ayed\tda-ayed\ejerciciofinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"estadio.h"
+
+1753495942 d:\ayed\tda-ayed\ejerciciofinal\estadio.h
+	"cola.h"
+	"nodo.h"
+
+1753495901 d:\ayed\tda-ayed\ejerciciofinal\cola.h
+	"nodo.h"
+
+1753497912 d:\ayed\tda-ayed\ejerciciofinal\nodo.h
+
+1753495596 source:d:\ayed\tda-ayed\ejerciciofinal\persona.c
+
+1753497651 source:d:\ayed\tda-ayed\ejerciciofinal\cola.c
+	<stdio.h>
+	<stdlib.h>
+	"cola.h"
+
+1753497647 source:d:\ayed\tda-ayed\ejerciciofinal\estadio.c
+	<stdio.h>
+	<stdlib.h>
+	"estadio.h"
+
