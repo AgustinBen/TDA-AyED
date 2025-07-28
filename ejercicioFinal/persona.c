@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "persona.h"
-
+#include "nodo.h"
 
 struct Persona{
 
@@ -36,8 +36,9 @@ void mostrarPersona(PersonaPtr persona){
 
 };
 
-void wrapperPersona(PersonaPtr persona){
+void wrapperPersona(DatoPtr dato){
 
-
+    PersonaPtr p = (PersonaPtr)dato;
+    mostrarPersona(p);
 
 };

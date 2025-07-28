@@ -10,7 +10,8 @@ typedef struct Estadio * EstadioPtr;
 
 EstadioPtr crearEstadio(char* nombre, int cap, char* loc);
 void mostrarEstadio(EstadioPtr estadio);
-
-void insertarPersona(EstadioPtr estadio, PersonaPtr persona);
+ColaPtr getCola(EstadioPtr estadio);
+void insertarPersonaEnCola(EstadioPtr estadio, PersonaPtr persona);
+void ingresarPersona(EstadioPtr estadio, void (*wrapper)(DatoPtr));
 
 #endif // ESTADIO_H_INCLUDED

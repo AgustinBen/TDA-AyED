@@ -23,12 +23,9 @@ void encolar(ColaPtr cola, DatoPtr dato){
     NodoPtr nodo = crearNodo(dato, NULL);
 
     if(cola->primero == NULL){
-
         cola->primero = nodo;
         cola->ultimo = nodo;
-
     }else{
-
         setSiguiente(cola->ultimo, nodo);
         cola->ultimo = nodo;
     }
@@ -36,14 +33,13 @@ void encolar(ColaPtr cola, DatoPtr dato){
 
 DatoPtr desencolar(ColaPtr cola){
 
-    NodoPtr nodo = cola->primero;
+    if(cola->primero != NULL){
 
-    if(nodo != NULL){
-
+        NodoPtr nodo = cola->primero;
         DatoPtr dato = getDato(nodo);
-        cola->primero = getSiguiente(nodo);
+        cola->primero = getSiguiente(cola->primero);
         if(cola->primero == NULL){
-            cola->ultimo == NULL;
+            cola->ultimo = NULL;
         }
         free(nodo);
         return dato;

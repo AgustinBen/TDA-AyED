@@ -12,6 +12,6 @@ int getDni(PersonaPtr persona);
 
 void mostrarPersona(PersonaPtr persona);
 
-void wrapperPersona(PersonaPtr persona);
+void wrapperPersona(void * dato);
 
 #endif // PERSONA_H_INCLUDED

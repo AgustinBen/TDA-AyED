@@ -30,10 +30,29 @@ void mostrarEstadio(EstadioPtr estadio){
     printf("Capacidad: %d \n", estadio->capacidad);
     printf("Localidad: %s \n", estadio->localidad);
     printf("\n\n");
+
 };
 
-void insertarPersona(EstadioPtr estadio, PersonaPtr persona){
+void insertarPersonaEnCola(EstadioPtr estadio, PersonaPtr persona){
 
     encolar(estadio->colaPersonas, persona);
 
+};
+
+ColaPtr getCola(EstadioPtr estadio){
+
+    return estadio->colaPersonas;
+
+};
+
+void ingresarPersona(EstadioPtr estadio, void (*wrapper)(DatoPtr)){
+
+    PersonaPtr p = desencolar(estadio->colaPersonas);
+
+    if(p == NULL){
+        printf("No hay personas esperando a ingresar \n");
+    }else{
+        printf("Persona ingresada \n");
+        wrapper(p);
+    }
 };
