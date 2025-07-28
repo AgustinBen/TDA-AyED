@@ -8,4 +8,10 @@ typedef struct Cola * ColaPtr;
 
 ColaPtr crearCola();
 
+void encolar(ColaPtr cola, DatoPtr dato);
+DatoPtr desencolar(ColaPtr cola);
+
+void setUltimo(ColaPtr cola, DatoPtr dato);
+
+
 #endif // COLA_H_INCLUDED

@@ -1,27 +1,40 @@
 # depslib dependency file v1.0
-1753496076 source:d:\ayed\tda-ayed\ejerciciofinal\main.c
+1753585351 source:d:\ayed\tda-ayed\ejerciciofinal\main.c
 	<stdio.h>
 	<stdlib.h>
 	"estadio.h"
 
-1753495942 d:\ayed\tda-ayed\ejerciciofinal\estadio.h
+1753591373 d:\ayed\tda-ayed\ejerciciofinal\estadio.h
 	"cola.h"
 	"nodo.h"
+	"persona.h"
 
-1753495901 d:\ayed\tda-ayed\ejerciciofinal\cola.h
+1753590075 d:\ayed\tda-ayed\ejerciciofinal\cola.h
 	"nodo.h"
 
 1753497912 d:\ayed\tda-ayed\ejerciciofinal\nodo.h
 
-1753495596 source:d:\ayed\tda-ayed\ejerciciofinal\persona.c
+1753688217 source:d:\ayed\tda-ayed\ejerciciofinal\persona.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"persona.h"
 
-1753497651 source:d:\ayed\tda-ayed\ejerciciofinal\cola.c
+1753589972 source:d:\ayed\tda-ayed\ejerciciofinal\cola.c
 	<stdio.h>
 	<stdlib.h>
 	"cola.h"
 
-1753497647 source:d:\ayed\tda-ayed\ejerciciofinal\estadio.c
+1753591377 source:d:\ayed\tda-ayed\ejerciciofinal\estadio.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 	"estadio.h"
+
+1753497993 source:d:\ayed\tda-ayed\ejerciciofinal\nodo.c
+	<stdio.h>
+	<stdlib.h>
+	"nodo.h"
+
+1753687984 d:\ayed\tda-ayed\ejerciciofinal\persona.h
 
