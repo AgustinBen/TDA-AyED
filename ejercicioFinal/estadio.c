@@ -9,6 +9,7 @@ struct Estadio{
     int capacidad;
     char localidad[25];
     ColaPtr colaPersonas;
+    PilaPtr pilaPersonas;
 
 };
 
@@ -20,6 +21,7 @@ EstadioPtr crearEstadio(char* nombre, int cap, char* loc){
     estadio->capacidad = cap;
     strcpy(estadio->localidad, loc);
     estadio->colaPersonas = crearCola();
+    estadio->pilaPersonas = crearPila();
 
     return estadio;
 };
@@ -45,6 +47,11 @@ ColaPtr getCola(EstadioPtr estadio){
 
 };
 
+PilaPtr getPila(EstadioPtr estadio){
+
+    return estadio->pilaPersonas;
+};
+
 void ingresarPersona(EstadioPtr estadio, void (*wrapper)(DatoPtr)){
 
     PersonaPtr p = desencolar(estadio->colaPersonas);
@@ -56,3 +63,25 @@ void ingresarPersona(EstadioPtr estadio, void (*wrapper)(DatoPtr)){
         wrapper(p);
     }
 };
+
+void apilarPersonas(EstadioPtr estadio, PersonaPtr p){
+
+    apilar(estadio->pilaPersonas, p);
+
+};
+
+void desapilarPersona(EstadioPtr estadio, void (*wrapper)(DatoPtr)){
+
+    if(getTope(estadio->pilaPersonas)==NULL){
+
+        printf("Estadio vacio \n");
+
+    }else{
+
+        DatoPtr p = desapilar(estadio->pilaPersonas);
+        printf("Persona se fue del estadio \n");
+        wrapper(p);
+    }
+};
+
+

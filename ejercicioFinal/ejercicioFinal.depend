@@ -1,14 +1,15 @@
 # depslib dependency file v1.0
-1753709233 source:d:\ayed\tda-ayed\ejerciciofinal\main.c
+1753792273 source:d:\ayed\tda-ayed\ejerciciofinal\main.c
 	<stdio.h>
 	<stdlib.h>
 	"estadio.h"
 	"persona.h"
 
-1753702564 d:\ayed\tda-ayed\ejerciciofinal\estadio.h
+1753791648 d:\ayed\tda-ayed\ejerciciofinal\estadio.h
 	"cola.h"
 	"nodo.h"
 	"persona.h"
+	"pila.h"
 
 1753590075 d:\ayed\tda-ayed\ejerciciofinal\cola.h
 	"nodo.h"
@@ -22,12 +23,12 @@
 	"persona.h"
 	"nodo.h"
 
-1753709142 source:d:\ayed\tda-ayed\ejerciciofinal\cola.c
+1753759612 source:d:\ayed\tda-ayed\ejerciciofinal\cola.c
 	<stdio.h>
 	<stdlib.h>
 	"cola.h"
 
-1753709106 source:d:\ayed\tda-ayed\ejerciciofinal\estadio.c
+1753791539 source:d:\ayed\tda-ayed\ejerciciofinal\estadio.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -39,4 +40,12 @@
 	"nodo.h"
 
 1753689485 d:\ayed\tda-ayed\ejerciciofinal\persona.h
+
+1753792230 source:d:\ayed\tda-ayed\ejerciciofinal\pila.c
+	<stdio.h>
+	<stdlib.h>
+	"pila.h"
+
+1753743646 d:\ayed\tda-ayed\ejerciciofinal\pila.h
+	"nodo.h"
 
